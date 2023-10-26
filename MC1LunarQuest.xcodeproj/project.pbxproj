@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C9EB54F2AE7FF9A000BF55C /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9EB54E2AE7FF9A000BF55C /* HomePageView.swift */; };
+		1C9EB5512AE7FFBC000BF55C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9EB5502AE7FFBC000BF55C /* UserModel.swift */; };
+		1C9EB5532AE80033000BF55C /* RoleSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9EB5522AE80033000BF55C /* RoleSetupView.swift */; };
+		1C9EB55A2AE800CD000BF55C /* UserSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9EB5542AE80049000BF55C /* UserSetupView.swift */; };
+		1C9EB55B2AE800D4000BF55C /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9EB5562AE80062000BF55C /* extensions.swift */; };
+		1C9EB55C2AE800D6000BF55C /* PermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9EB5582AE80077000BF55C /* PermissionsView.swift */; };
+		6D3A83642AE808C700524475 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A83632AE808C700524475 /* SettingsView.swift */; };
+		C84E93BA2AE6C83F00951A39 /* MC1LunarQuestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84E93B92AE6C83F00951A39 /* MC1LunarQuestApp.swift */; };
+		C84E93BC2AE6C83F00951A39 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84E93BB2AE6C83F00951A39 /* ContentView.swift */; };
+		C84E93BE2AE6C83F00951A39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C84E93BD2AE6C83F00951A39 /* Assets.xcassets */; };
+		C84E93C12AE6C83F00951A39 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C84E93C02AE6C83F00951A39 /* Preview Assets.xcassets */; };
+		C84E93CB2AE6C84000951A39 /* MC1LunarQuestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84E93CA2AE6C84000951A39 /* MC1LunarQuestTests.swift */; };
+		C84E93D52AE6C84000951A39 /* MC1LunarQuestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84E93D42AE6C84000951A39 /* MC1LunarQuestUITests.swift */; };
+		C84E93D72AE6C84000951A39 /* MC1LunarQuestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84E93D62AE6C84000951A39 /* MC1LunarQuestUITestsLaunchTests.swift */; };
+		D759F7BB2AEA8FEF00D93B87 /* ARInfoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D759F7BA2AEA8FEF00D93B87 /* ARInfoCardView.swift */; };
+		D759F7BD2AEA905B00D93B87 /* AROverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D759F7BC2AEA905B00D93B87 /* AROverlayView.swift */; };
+		D759F7BF2AEA908D00D93B87 /* MissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D759F7BE2AEA908D00D93B87 /* MissionView.swift */; };
+		D759F7C12AEA90D100D93B87 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = D759F7C02AEA90D100D93B87 /* Experience.rcproject */; };
+		D759F7C62AEA938000D93B87 /* MissionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D759F7C52AEA938000D93B87 /* MissionViewModel.swift */; };
+		D759F7C82AEA93F000D93B87 /* MissionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D759F7C72AEA93F000D93B87 /* MissionCardView.swift */; };
+		D759F7CA2AEA941400D93B87 /* MissionsPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D759F7C92AEA941400D93B87 /* MissionsPageView.swift */; };
+		D759F7CF2AEA9A8300D93B87 /* MissionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D759F7CE2AEA9A8300D93B87 /* MissionModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C84E93C72AE6C84000951A39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C84E93AE2AE6C83F00951A39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C84E93B52AE6C83F00951A39;
+			remoteInfo = MC1LunarQuest;
+		};
+		C84E93D12AE6C84000951A39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C84E93AE2AE6C83F00951A39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C84E93B52AE6C83F00951A39;
+			remoteInfo = MC1LunarQuest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C9EB54E2AE7FF9A000BF55C /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		1C9EB5502AE7FFBC000BF55C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		1C9EB5522AE80033000BF55C /* RoleSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleSetupView.swift; sourceTree = "<group>"; };
+		1C9EB5542AE80049000BF55C /* UserSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSetupView.swift; sourceTree = "<group>"; };
+		1C9EB5562AE80062000BF55C /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		1C9EB5582AE80077000BF55C /* PermissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsView.swift; sourceTree = "<group>"; };
+		6D3A83632AE808C700524475 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		C84E93B62AE6C83F00951A39 /* MC1LunarQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MC1LunarQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C84E93B92AE6C83F00951A39 /* MC1LunarQuestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MC1LunarQuestApp.swift; sourceTree = "<group>"; };
+		C84E93BB2AE6C83F00951A39 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C84E93BD2AE6C83F00951A39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C84E93C02AE6C83F00951A39 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C84E93C62AE6C84000951A39 /* MC1LunarQuestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MC1LunarQuestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C84E93CA2AE6C84000951A39 /* MC1LunarQuestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MC1LunarQuestTests.swift; sourceTree = "<group>"; };
+		C84E93D02AE6C84000951A39 /* MC1LunarQuestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MC1LunarQuestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C84E93D42AE6C84000951A39 /* MC1LunarQuestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MC1LunarQuestUITests.swift; sourceTree = "<group>"; };
+		C84E93D62AE6C84000951A39 /* MC1LunarQuestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MC1LunarQuestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D759F7BA2AEA8FEF00D93B87 /* ARInfoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ARInfoCardView.swift; path = "../../../test-app/test-app/ARInfoCardView.swift"; sourceTree = "<group>"; };
+		D759F7BC2AEA905B00D93B87 /* AROverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AROverlayView.swift; path = "../../../test-app/test-app/AROverlayView.swift"; sourceTree = "<group>"; };
+		D759F7BE2AEA908D00D93B87 /* MissionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MissionView.swift; path = "../../../test-app/test-app/MissionView.swift"; sourceTree = "<group>"; };
+		D759F7C02AEA90D100D93B87 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = Experience.rcproject; path = "../../test-app/test-app/Experience.rcproject"; sourceTree = "<group>"; };
+		D759F7C52AEA938000D93B87 /* MissionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MissionViewModel.swift; path = ../Views/MissionViewModel.swift; sourceTree = "<group>"; };
+		D759F7C72AEA93F000D93B87 /* MissionCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MissionCardView.swift; path = ../../../../Downloads/MissionCardView.swift; sourceTree = "<group>"; };
+		D759F7C92AEA941400D93B87 /* MissionsPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionsPageView.swift; sourceTree = "<group>"; };
+		D759F7CE2AEA9A8300D93B87 /* MissionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C84E93B32AE6C83F00951A39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C84E93C32AE6C84000951A39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C84E93CD2AE6C84000951A39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C84E93AD2AE6C83F00951A39 = {
+			isa = PBXGroup;
+			children = (
+				C84E93B82AE6C83F00951A39 /* MC1LunarQuest */,
+				C84E93C92AE6C84000951A39 /* MC1LunarQuestTests */,
+				C84E93D32AE6C84000951A39 /* MC1LunarQuestUITests */,
+				C84E93B72AE6C83F00951A39 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C84E93B72AE6C83F00951A39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C84E93B62AE6C83F00951A39 /* MC1LunarQuest.app */,
+				C84E93C62AE6C84000951A39 /* MC1LunarQuestTests.xctest */,
+				C84E93D02AE6C84000951A39 /* MC1LunarQuestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C84E93B82AE6C83F00951A39 /* MC1LunarQuest */ = {
+			isa = PBXGroup;
+			children = (
+				C84E93B92AE6C83F00951A39 /* MC1LunarQuestApp.swift */,
+				D759F7B62AEA8F9D00D93B87 /* Views */,
+				D759F7C22AEA91E100D93B87 /* ViewModels */,
+				D759F7B72AEA8FD100D93B87 /* Model */,
+				1C9EB5562AE80062000BF55C /* extensions.swift */,
+				C84E93BD2AE6C83F00951A39 /* Assets.xcassets */,
+				D759F7C02AEA90D100D93B87 /* Experience.rcproject */,
+				C84E93BF2AE6C83F00951A39 /* Preview Content */,
+			);
+			path = MC1LunarQuest;
+			sourceTree = "<group>";
+		};
+		C84E93BF2AE6C83F00951A39 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C84E93C02AE6C83F00951A39 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C84E93C92AE6C84000951A39 /* MC1LunarQuestTests */ = {
+			isa = PBXGroup;
+			children = (
+				C84E93CA2AE6C84000951A39 /* MC1LunarQuestTests.swift */,
+			);
+			path = MC1LunarQuestTests;
+			sourceTree = "<group>";
+		};
+		C84E93D32AE6C84000951A39 /* MC1LunarQuestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C84E93D42AE6C84000951A39 /* MC1LunarQuestUITests.swift */,
+				C84E93D62AE6C84000951A39 /* MC1LunarQuestUITestsLaunchTests.swift */,
+			);
+			path = MC1LunarQuestUITests;
+			sourceTree = "<group>";
+		};
+		D759F7B62AEA8F9D00D93B87 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1C9EB54E2AE7FF9A000BF55C /* HomePageView.swift */,
+				6D3A83632AE808C700524475 /* SettingsView.swift */,
+				C84E93BB2AE6C83F00951A39 /* ContentView.swift */,
+				D759F7CB2AEA972000D93B87 /* Onboarding Views */,
+				D759F7C92AEA941400D93B87 /* MissionsPageView.swift */,
+				D759F7BE2AEA908D00D93B87 /* MissionView.swift */,
+				D759F7C72AEA93F000D93B87 /* MissionCardView.swift */,
+				D759F7BC2AEA905B00D93B87 /* AROverlayView.swift */,
+				D759F7BA2AEA8FEF00D93B87 /* ARInfoCardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D759F7B72AEA8FD100D93B87 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1C9EB5502AE7FFBC000BF55C /* UserModel.swift */,
+				D759F7CE2AEA9A8300D93B87 /* MissionModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D759F7C22AEA91E100D93B87 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D759F7C52AEA938000D93B87 /* MissionViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D759F7CB2AEA972000D93B87 /* Onboarding Views */ = {
+			isa = PBXGroup;
+			children = (
+				1C9EB5522AE80033000BF55C /* RoleSetupView.swift */,
+				1C9EB5542AE80049000BF55C /* UserSetupView.swift */,
+				1C9EB5582AE80077000BF55C /* PermissionsView.swift */,
+			);
+			path = "Onboarding Views";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C84E93B52AE6C83F00951A39 /* MC1LunarQuest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C84E93DA2AE6C84000951A39 /* Build configuration list for PBXNativeTarget "MC1LunarQuest" */;
+			buildPhases = (
+				C84E93B22AE6C83F00951A39 /* Sources */,
+				C84E93B32AE6C83F00951A39 /* Frameworks */,
+				C84E93B42AE6C83F00951A39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MC1LunarQuest;
+			productName = MC1LunarQuest;
+			productReference = C84E93B62AE6C83F00951A39 /* MC1LunarQuest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C84E93C52AE6C84000951A39 /* MC1LunarQuestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C84E93DD2AE6C84000951A39 /* Build configuration list for PBXNativeTarget "MC1LunarQuestTests" */;
+			buildPhases = (
+				C84E93C22AE6C84000951A39 /* Sources */,
+				C84E93C32AE6C84000951A39 /* Frameworks */,
+				C84E93C42AE6C84000951A39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C84E93C82AE6C84000951A39 /* PBXTargetDependency */,
+			);
+			name = MC1LunarQuestTests;
+			productName = MC1LunarQuestTests;
+			productReference = C84E93C62AE6C84000951A39 /* MC1LunarQuestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C84E93CF2AE6C84000951A39 /* MC1LunarQuestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C84E93E02AE6C84000951A39 /* Build configuration list for PBXNativeTarget "MC1LunarQuestUITests" */;
+			buildPhases = (
+				C84E93CC2AE6C84000951A39 /* Sources */,
+				C84E93CD2AE6C84000951A39 /* Frameworks */,
+				C84E93CE2AE6C84000951A39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C84E93D22AE6C84000951A39 /* PBXTargetDependency */,
+			);
+			name = MC1LunarQuestUITests;
+			productName = MC1LunarQuestUITests;
+			productReference = C84E93D02AE6C84000951A39 /* MC1LunarQuestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C84E93AE2AE6C83F00951A39 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					C84E93B52AE6C83F00951A39 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					C84E93C52AE6C84000951A39 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = C84E93B52AE6C83F00951A39;
+					};
+					C84E93CF2AE6C84000951A39 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = C84E93B52AE6C83F00951A39;
+					};
+				};
+			};
+			buildConfigurationList = C84E93B12AE6C83F00951A39 /* Build configuration list for PBXProject "MC1LunarQuest" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C84E93AD2AE6C83F00951A39;
+			productRefGroup = C84E93B72AE6C83F00951A39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C84E93B52AE6C83F00951A39 /* MC1LunarQuest */,
+				C84E93C52AE6C84000951A39 /* MC1LunarQuestTests */,
+				C84E93CF2AE6C84000951A39 /* MC1LunarQuestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C84E93B42AE6C83F00951A39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C84E93C12AE6C83F00951A39 /* Preview Assets.xcassets in Resources */,
+				C84E93BE2AE6C83F00951A39 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C84E93C42AE6C84000951A39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C84E93CE2AE6C84000951A39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C84E93B22AE6C83F00951A39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C9EB5532AE80033000BF55C /* RoleSetupView.swift in Sources */,
+				C84E93BC2AE6C83F00951A39 /* ContentView.swift in Sources */,
+				D759F7C82AEA93F000D93B87 /* MissionCardView.swift in Sources */,
+				1C9EB54F2AE7FF9A000BF55C /* HomePageView.swift in Sources */,
+				D759F7BB2AEA8FEF00D93B87 /* ARInfoCardView.swift in Sources */,
+				1C9EB55B2AE800D4000BF55C /* extensions.swift in Sources */,
+				D759F7C12AEA90D100D93B87 /* Experience.rcproject in Sources */,
+				D759F7BF2AEA908D00D93B87 /* MissionView.swift in Sources */,
+				1C9EB5512AE7FFBC000BF55C /* UserModel.swift in Sources */,
+				C84E93BA2AE6C83F00951A39 /* MC1LunarQuestApp.swift in Sources */,
+				D759F7BD2AEA905B00D93B87 /* AROverlayView.swift in Sources */,
+				D759F7CF2AEA9A8300D93B87 /* MissionModel.swift in Sources */,
+				6D3A83642AE808C700524475 /* SettingsView.swift in Sources */,
+				D759F7C62AEA938000D93B87 /* MissionViewModel.swift in Sources */,
+				1C9EB55A2AE800CD000BF55C /* UserSetupView.swift in Sources */,
+				D759F7CA2AEA941400D93B87 /* MissionsPageView.swift in Sources */,
+				1C9EB55C2AE800D6000BF55C /* PermissionsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C84E93C22AE6C84000951A39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C84E93CB2AE6C84000951A39 /* MC1LunarQuestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C84E93CC2AE6C84000951A39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C84E93D72AE6C84000951A39 /* MC1LunarQuestUITestsLaunchTests.swift in Sources */,
+				C84E93D52AE6C84000951A39 /* MC1LunarQuestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C84E93C82AE6C84000951A39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C84E93B52AE6C83F00951A39 /* MC1LunarQuest */;
+			targetProxy = C84E93C72AE6C84000951A39 /* PBXContainerItemProxy */;
+		};
+		C84E93D22AE6C84000951A39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C84E93B52AE6C83F00951A39 /* MC1LunarQuest */;
+			targetProxy = C84E93D12AE6C84000951A39 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C84E93D82AE6C84000951A39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C84E93D92AE6C84000951A39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C84E93DB2AE6C84000951A39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MC1LunarQuest/Preview Content\"";
+				DEVELOPMENT_TEAM = U9JXWD2ZKD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access your camera to enable the AR experience.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Sasha.MC1LunarQuest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C84E93DC2AE6C84000951A39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MC1LunarQuest/Preview Content\"";
+				DEVELOPMENT_TEAM = U9JXWD2ZKD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access your camera to enable the AR experience.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Sasha.MC1LunarQuest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C84E93DE2AE6C84000951A39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VBGYUNBKAG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Arantza.MC1LunarQuestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MC1LunarQuest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MC1LunarQuest";
+			};
+			name = Debug;
+		};
+		C84E93DF2AE6C84000951A39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VBGYUNBKAG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Arantza.MC1LunarQuestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MC1LunarQuest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MC1LunarQuest";
+			};
+			name = Release;
+		};
+		C84E93E12AE6C84000951A39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VBGYUNBKAG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Arantza.MC1LunarQuestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MC1LunarQuest;
+			};
+			name = Debug;
+		};
+		C84E93E22AE6C84000951A39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VBGYUNBKAG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Arantza.MC1LunarQuestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MC1LunarQuest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C84E93B12AE6C83F00951A39 /* Build configuration list for PBXProject "MC1LunarQuest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C84E93D82AE6C84000951A39 /* Debug */,
+				C84E93D92AE6C84000951A39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C84E93DA2AE6C84000951A39 /* Build configuration list for PBXNativeTarget "MC1LunarQuest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C84E93DB2AE6C84000951A39 /* Debug */,
+				C84E93DC2AE6C84000951A39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C84E93DD2AE6C84000951A39 /* Build configuration list for PBXNativeTarget "MC1LunarQuestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C84E93DE2AE6C84000951A39 /* Debug */,
+				C84E93DF2AE6C84000951A39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C84E93E02AE6C84000951A39 /* Build configuration list for PBXNativeTarget "MC1LunarQuestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C84E93E12AE6C84000951A39 /* Debug */,
+				C84E93E22AE6C84000951A39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C84E93AE2AE6C83F00951A39 /* Project object */;
+}
