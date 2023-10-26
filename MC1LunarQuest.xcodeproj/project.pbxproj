@@ -23,6 +23,7 @@
 		C84E93CB2AE6C84000951A39 /* MC1LunarQuestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84E93CA2AE6C84000951A39 /* MC1LunarQuestTests.swift */; };
 		C84E93D52AE6C84000951A39 /* MC1LunarQuestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84E93D42AE6C84000951A39 /* MC1LunarQuestUITests.swift */; };
 		C84E93D72AE6C84000951A39 /* MC1LunarQuestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84E93D62AE6C84000951A39 /* MC1LunarQuestUITestsLaunchTests.swift */; };
+		C8C209DE2AEAB2960056CF78 /* ARMissionEndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C209DD2AEAB2960056CF78 /* ARMissionEndView.swift */; };
 		D759F7C62AEA938000D93B87 /* MissionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D759F7C52AEA938000D93B87 /* MissionViewModel.swift */; };
 		D759F7CA2AEA941400D93B87 /* MissionsPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D759F7C92AEA941400D93B87 /* MissionsPageView.swift */; };
 		D759F7CF2AEA9A8300D93B87 /* MissionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D759F7CE2AEA9A8300D93B87 /* MissionModel.swift */; };
@@ -70,6 +71,7 @@
 		C84E93D02AE6C84000951A39 /* MC1LunarQuestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MC1LunarQuestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C84E93D42AE6C84000951A39 /* MC1LunarQuestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MC1LunarQuestUITests.swift; sourceTree = "<group>"; };
 		C84E93D62AE6C84000951A39 /* MC1LunarQuestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MC1LunarQuestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C8C209DD2AEAB2960056CF78 /* ARMissionEndView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARMissionEndView.swift; sourceTree = "<group>"; };
 		D759F7C52AEA938000D93B87 /* MissionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MissionViewModel.swift; path = ../Views/MissionViewModel.swift; sourceTree = "<group>"; };
 		D759F7C92AEA941400D93B87 /* MissionsPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionsPageView.swift; sourceTree = "<group>"; };
 		D759F7CE2AEA9A8300D93B87 /* MissionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionModel.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				C84E93BB2AE6C83F00951A39 /* ContentView.swift */,
 				D759F7CB2AEA972000D93B87 /* Onboarding Views */,
 				D759F7C92AEA941400D93B87 /* MissionsPageView.swift */,
+				C8C209DD2AEAB2960056CF78 /* ARMissionEndView.swift */,
 				D7EE14742AEAAE70007BE48E /* MissionCardView.swift */,
 				D7EE14722AEAAE52007BE48E /* MissionView.swift */,
 				D7EE14762AEAAE88007BE48E /* AROverlayView.swift */,
@@ -358,6 +361,7 @@
 				D759F7CA2AEA941400D93B87 /* MissionsPageView.swift in Sources */,
 				D7EE14792AEAAECA007BE48E /* ARInfoCardView.swift in Sources */,
 				1C9EB55C2AE800D6000BF55C /* PermissionsView.swift in Sources */,
+				C8C209DE2AEAB2960056CF78 /* ARMissionEndView.swift in Sources */,
 				D7EE14752AEAAE70007BE48E /* MissionCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
