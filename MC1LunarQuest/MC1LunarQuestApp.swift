@@ -32,6 +32,7 @@ struct MC1LunarQuestApp: App {
                 }
             }
             .preferredColorScheme(.dark)
+            .accentColor(.purple)
         }
     }
 }

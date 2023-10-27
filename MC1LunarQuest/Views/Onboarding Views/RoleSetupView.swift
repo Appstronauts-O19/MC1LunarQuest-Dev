@@ -31,7 +31,7 @@ struct RoleSetupView: View {
                     // Your buttons or other content here
                     Spacer(minLength: 500)
                     Text("Pick your role")
-                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/).bold()
+                        .font(.title).bold()
                         .foregroundColor(.white)
                     
                     Text("Choose your role wisely, for it will shape your journey. Each role brings its own set of fascinating facts and insights, catering to your unique interests.")
@@ -55,9 +55,10 @@ struct RoleSetupView: View {
                     HStack{
                         NavigationLink(destination: PermissionsView(user: $user)){
                             Label("Allow Permissions  ", systemImage: "arrowshape.forward.circle")
-                                .background(RoundedRectangle(cornerRadius: 10)
-                                    .foregroundColor(.UserSetup_grey.opacity(0.6)))
+                                .padding(10)
+                                .background(Color.UserSetup_grey.opacity(0.6))
                                 .foregroundColor(.white)
+                                .clipShape(Capsule())
                         }
                     }.padding()
                     
@@ -67,7 +68,7 @@ struct RoleSetupView: View {
             }
             .edgesIgnoringSafeArea(.all)
         }
-        
+        .accentColor(.purple)
     }
 }
 

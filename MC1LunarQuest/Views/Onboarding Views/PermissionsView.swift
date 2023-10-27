@@ -80,6 +80,8 @@ struct PermissionsView: View {
                                     isAlertPresented = false
                                     user.hasCompletedSetup = true
                                     })
+                            
+                            Spacer(minLength: 10)
                                 
                         }
                                 
@@ -89,9 +91,10 @@ struct PermissionsView: View {
 
                         NavigationLink(destination: HomePageView(user: $user)) {
                             Label("Explore the Universe  ", systemImage: "arrowshape.forward.circle")
-                                .background(RoundedRectangle(cornerRadius: 10)
-                                    .foregroundColor(Color.gray.opacity(0.6)))
+                                .padding(10)
+                                .background(Color.gray.opacity(0.6))
                                 .foregroundColor(.white)
+                                .clipShape(Capsule())
                             
                         }
                     }.padding()
@@ -105,7 +108,7 @@ struct PermissionsView: View {
                 
             }.edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
         }
-        
+        .accentColor(.purple)
     }
 }
 

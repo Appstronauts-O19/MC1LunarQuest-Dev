@@ -78,9 +78,10 @@ struct UserSetupView: View {
                         NavigationLink(destination: RoleSetupView(user: $user)){
                             //Image(systemName: "arrowshape.forward.circle")
                             Label("Pick Your Role  ", systemImage: "arrowshape.forward.circle")
-                                .background(RoundedRectangle(cornerRadius: 10)
-                                    .foregroundColor(.UserSetup_grey.opacity(0.6)))
+                                .padding(10)
+                                .background(Color.UserSetup_grey.opacity(0.6))
                                 .foregroundColor(.white)
+                                .clipShape(Capsule())
                             
                         }
                     }.padding()
@@ -89,6 +90,7 @@ struct UserSetupView: View {
                 }
                 
             }.ignoresSafeArea()
+            
         }
         
     }
