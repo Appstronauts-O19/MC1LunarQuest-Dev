@@ -28,7 +28,6 @@
 		D759F7CA2AEA941400D93B87 /* MissionsPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D759F7C92AEA941400D93B87 /* MissionsPageView.swift */; };
 		D759F7CF2AEA9A8300D93B87 /* MissionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D759F7CE2AEA9A8300D93B87 /* MissionModel.swift */; };
 		D7EE14732AEAAE52007BE48E /* MissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EE14722AEAAE52007BE48E /* MissionView.swift */; };
-		D7EE14752AEAAE70007BE48E /* MissionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EE14742AEAAE70007BE48E /* MissionCardView.swift */; };
 		D7EE14772AEAAE88007BE48E /* AROverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EE14762AEAAE88007BE48E /* AROverlayView.swift */; };
 		D7EE14792AEAAECA007BE48E /* ARInfoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EE14782AEAAECA007BE48E /* ARInfoCardView.swift */; };
 		D7EE147B2AEAAF8C007BE48E /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = D7EE147A2AEAAF8C007BE48E /* Experience.rcproject */; };
@@ -76,7 +75,6 @@
 		D759F7C92AEA941400D93B87 /* MissionsPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionsPageView.swift; sourceTree = "<group>"; };
 		D759F7CE2AEA9A8300D93B87 /* MissionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionModel.swift; sourceTree = "<group>"; };
 		D7EE14722AEAAE52007BE48E /* MissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionView.swift; sourceTree = "<group>"; };
-		D7EE14742AEAAE70007BE48E /* MissionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionCardView.swift; sourceTree = "<group>"; };
 		D7EE14762AEAAE88007BE48E /* AROverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AROverlayView.swift; sourceTree = "<group>"; };
 		D7EE14782AEAAECA007BE48E /* ARInfoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARInfoCardView.swift; sourceTree = "<group>"; };
 		D7EE147A2AEAAF8C007BE48E /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
@@ -178,7 +176,6 @@
 				D759F7CB2AEA972000D93B87 /* Onboarding Views */,
 				D759F7C92AEA941400D93B87 /* MissionsPageView.swift */,
 				C8C209DD2AEAB2960056CF78 /* ARMissionEndView.swift */,
-				D7EE14742AEAAE70007BE48E /* MissionCardView.swift */,
 				D7EE14722AEAAE52007BE48E /* MissionView.swift */,
 				D7EE14762AEAAE88007BE48E /* AROverlayView.swift */,
 				D7EE14782AEAAECA007BE48E /* ARInfoCardView.swift */,
@@ -362,7 +359,6 @@
 				D7EE14792AEAAECA007BE48E /* ARInfoCardView.swift in Sources */,
 				1C9EB55C2AE800D6000BF55C /* PermissionsView.swift in Sources */,
 				C8C209DE2AEAB2960056CF78 /* ARMissionEndView.swift in Sources */,
-				D7EE14752AEAAE70007BE48E /* MissionCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,7 +522,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MC1LunarQuest/Preview Content\"";
-				DEVELOPMENT_TEAM = WL7F853P7M;
+				DEVELOPMENT_TEAM = VBGYUNBKAG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access your camera to enable the AR experience.";
@@ -541,7 +537,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "-eff.MC1LunarQuest";
+				PRODUCT_BUNDLE_IDENTIFIER = Arantza.MC1LunarQuest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -560,7 +556,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MC1LunarQuest/Preview Content\"";
-				DEVELOPMENT_TEAM = WL7F853P7M;
+				DEVELOPMENT_TEAM = VBGYUNBKAG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access your camera to enable the AR experience.";
@@ -575,7 +571,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "-eff.MC1LunarQuest";
+				PRODUCT_BUNDLE_IDENTIFIER = Arantza.MC1LunarQuest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
