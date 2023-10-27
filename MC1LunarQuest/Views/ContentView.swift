@@ -14,18 +14,15 @@ struct ContentView: View {
     let saveAction: ()->Void
     
     var body: some View {
-        NavigationStack{
+        
+        NavigationView{
             
-            if user.hasCompletedSetup{
-                HomePageView(user: $user)
-            }
-            else{
-                UserSetupView(user: $user)
-            }
+            LoadingView(user: $user)
+            .onChange(of: scenePhase, { oldValue, newValue in
+                if newValue == .inactive { saveAction() }
+            })
+            
         }
-        .onChange(of: scenePhase, { oldValue, newValue in
-            if newValue == .inactive { saveAction() }
-        })
     }
 }
 

@@ -14,7 +14,7 @@ struct UserSetupView: View {
     
     var body: some View {
         
-        NavigationView{
+        NavigationStack{
             
             ZStack {
                 

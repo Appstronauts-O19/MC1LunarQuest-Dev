@@ -14,7 +14,8 @@ struct RoleSetupView: View {
         
     var body: some View {
         
-        NavigationView{
+        NavigationStack{
+            
             ZStack {
                 if user.role == .explorer {
                     Image(.explorer) // Use the image for Role 1

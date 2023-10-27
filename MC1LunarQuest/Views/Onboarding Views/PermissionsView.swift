@@ -92,6 +92,7 @@ struct PermissionsView: View {
                                 .background(RoundedRectangle(cornerRadius: 10)
                                     .foregroundColor(Color.gray.opacity(0.6)))
                                 .foregroundColor(.white)
+                            
                         }
                     }.padding()
                     

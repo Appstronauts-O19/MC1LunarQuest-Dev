@@ -5,43 +5,15 @@ struct UserModel: Identifiable, Codable {
     let id: UUID
     var username: String
     var role: Role
-    var badges: [Badge]
+    var badges: [String]
     var hasCompletedSetup : Bool
 
-    init(id: UUID = UUID(), username: String = "John Doe", role: Role = .explorer, badges: [Badge] = [], hasCompletedSetup: Bool = false) {
+    init(id: UUID = UUID(), username: String = "John Doe", role: Role = .explorer, badges: [String] = [], hasCompletedSetup: Bool = false) {
         self.id = id
         self.username = username
         self.role = role
         self.badges = badges
         self.hasCompletedSetup = hasCompletedSetup
-    }
-}
-
-extension UserModel {
-    struct Badge: Identifiable, Codable {
-        var id: String
-        var image: Image
-
-        // Custom CodingKeys to specify how Badge is encoded/decoded
-        private enum CodingKeys: String, CodingKey {
-            case id
-            case imageName
-        }
-
-        // Custom initializer to decode a Badge
-        init(from decoder: Decoder) throws {
-            let container = try decoder.container(keyedBy: CodingKeys.self)
-            id = try container.decode(String.self, forKey: .id)
-            let imageName = try container.decode(String.self, forKey: .imageName)
-            image = Image(systemName: imageName)
-        }
-
-        // Custom method to encode a Badge
-        func encode(to encoder: Encoder) throws {
-            var container = encoder.container(keyedBy: CodingKeys.self)
-            try container.encode(id, forKey: .id)
-            // If you need to store the image name for decoding, you can extract it from the Image here.
-        }
     }
 }
 
@@ -98,3 +70,4 @@ class UserData: ObservableObject {
             _ = try await task.value
         }
 }
+

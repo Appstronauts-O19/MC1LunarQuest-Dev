@@ -9,14 +9,17 @@ import SwiftUI
 
 struct HomePageView: View {
     @Binding var user : UserModel
+    //@State private var exampleUser = UserModel(badges: ["moon.stars.fill",  "heart.circle.fill", "house.circle.fill"])
     
     var body: some View {
         
-        
-        NavigationView(content: {
+        NavigationStack{
             
-        
+            
             ZStack{
+                Image(.homeView)
+                    .resizable()
+                    .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
                 
                 VStack{
                     
@@ -25,7 +28,7 @@ struct HomePageView: View {
                         Rectangle()
                             .padding()
                             .foregroundColor(.clear)
-                            .frame(width: 299, height: 354)
+                            .frame(width: 299, height: 400)
                             .background(.black)
                             .cornerRadius(25)
                             .overlay(
@@ -35,53 +38,49 @@ struct HomePageView: View {
                             .padding(.bottom,60)
                         
                         VStack{
-                            
-                          
-                            
+          
                             Image(user.role.stringValue)
                                 .resizable()
                                 .frame(width: 157, height: 300)
                                 .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-                                .padding(.top,-100)
-                                
+                                .padding(.top,-120)
                             
-                            
+                       
                             Text("\(user.username)")
                                 .font(
                                     Font.custom("SF Pro", size: 30)
                                         .weight(.bold)
                                 )
-                                .multilineTextAlignment(.center)
                                 .foregroundColor(.white)
-                                .frame(width: 233, alignment: .center)
+                                .padding(.top, -40)
                             
                             Text("\(user.role.stringValue)")
                                 .font(
                                     Font.custom("SF Pro", size: 18)
                                         .weight(.medium)
                                 )
-                                .multilineTextAlignment(.center)
                                 .foregroundColor(.white)
-                                .frame(width: 233, height: 19, alignment: .center)
                             
-                            HStack{
+                            HStack(spacing: 20){
                                 
-                                Image("placeholder1")
-                                Image("placeholder2")
-                                Image("placeholder3")
-                                Image("placeholder1")
+                                ForEach(user.badges, id: \.self) { badgeName in
+                                    Rectangle()
+                                        .foregroundColor(.clear)
+                                        .frame(width: 54, height: 54)
+                                        .background(
+                                            Image(systemName: badgeName)
+                                                .resizable()
+                                                .aspectRatio(contentMode: .fill)
+                                                .frame(width: 54, height: 54)
+                                                .clipped()
+                                        )
+                                    
+                                }
                                 
                             }
-                            
-                            
-                            
+                            .padding()
                         }
-                        
-                        
                     }
-                    
-                    
-                    
                     
                     Button(action: {
                         // Azione da eseguire quando il bottone viene premuto
@@ -91,14 +90,13 @@ struct HomePageView: View {
                             Label("Space Mission", systemImage: "moon.fill")
                                 .font(Font.custom("SF Pro", size: 17))
                                 .foregroundColor(.white)
-                                .foregroundColor(.white)  // Colore del testo
-                            }
                         }
-                        .padding(.horizontal, 20)
-                        .padding(.vertical, 14)
-                        .frame(width: 299, height: 50, alignment: .center)
-                        .background(Color(red: 0.65, green: 0.35, blue: 0.87))
-                        .cornerRadius(12)
+                    }
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 14)
+                    .frame(width: 299, height: 50, alignment: .center)
+                    .background(Color(red: 0.65, green: 0.35, blue: 0.87))
+                    .cornerRadius(12)
                     
                     
                     Button(action: {
@@ -120,10 +118,14 @@ struct HomePageView: View {
                     Button(action: {
                         // Azione da eseguire quando il bottone viene premuto
                     }) {
-                        Label("Info", systemImage: "info.circle")
-                            .font(Font.custom("SF Pro", size: 17))
-                            .foregroundColor(.white)
-                            .foregroundColor(.white)  // Colore del testo
+                        NavigationLink {
+                            TextLoading(user: $user)
+                        }
+                        label: {
+                            Label("Info", systemImage: "info.circle")
+                                .font(Font.custom("SF Pro", size: 17))
+                                .foregroundColor(.white)
+                            }
                     }
                     .padding(.horizontal, 20)
                     .padding(.vertical, 14)
@@ -133,13 +135,9 @@ struct HomePageView: View {
                     
                 }
                 
-            }
+            }.edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             
-            
-            foregroundColor(.black)
-            
-            
-        }).navigationBarHidden(true)
+        }.navigationBarHidden(true)
     }
 }
 
