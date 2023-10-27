@@ -119,7 +119,7 @@ struct HomePageView: View {
                         // Azione da eseguire quando il bottone viene premuto
                     }) {
                         NavigationLink {
-                            TextLoading(user: $user)
+                            InformationView(user: $user)
                         }
                         label: {
                             Label("Info", systemImage: "info.circle")

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C3E08D72AEBC44A00D45FD2 /* TextLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3E08D62AEBC44A00D45FD2 /* TextLoading.swift */; };
-		1C3E08D92AEBC44E00D45FD2 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3E08D82AEBC44E00D45FD2 /* LoadingView.swift */; };
+		1C3E08DB2AEBEB1400D45FD2 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3E08DA2AEBEB1400D45FD2 /* LoadingView.swift */; };
+		1C3E08DD2AEBEB3500D45FD2 /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3E08DC2AEBEB3500D45FD2 /* InformationView.swift */; };
 		1C9EB54F2AE7FF9A000BF55C /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9EB54E2AE7FF9A000BF55C /* HomePageView.swift */; };
 		1C9EB5512AE7FFBC000BF55C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9EB5502AE7FFBC000BF55C /* UserModel.swift */; };
 		1C9EB5532AE80033000BF55C /* RoleSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9EB5522AE80033000BF55C /* RoleSetupView.swift */; };
@@ -51,8 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1C3E08D62AEBC44A00D45FD2 /* TextLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextLoading.swift; path = ../../../../../../Desktop/TextLoading.swift; sourceTree = "<group>"; };
-		1C3E08D82AEBC44E00D45FD2 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadingView.swift; path = ../../../../../../Desktop/LoadingView.swift; sourceTree = "<group>"; };
+		1C3E08DA2AEBEB1400D45FD2 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		1C3E08DC2AEBEB3500D45FD2 /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
 		1C9EB54E2AE7FF9A000BF55C /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		1C9EB5502AE7FFBC000BF55C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		1C9EB5522AE80033000BF55C /* RoleSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleSetupView.swift; sourceTree = "<group>"; };
@@ -168,8 +168,8 @@
 		D759F7B62AEA8F9D00D93B87 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1C3E08D82AEBC44E00D45FD2 /* LoadingView.swift */,
-				1C3E08D62AEBC44A00D45FD2 /* TextLoading.swift */,
+				1C3E08DA2AEBEB1400D45FD2 /* LoadingView.swift */,
+				1C3E08DC2AEBEB3500D45FD2 /* InformationView.swift */,
 				1C9EB54E2AE7FF9A000BF55C /* HomePageView.swift */,
 				6D3A83632AE808C700524475 /* SettingsView.swift */,
 				C84E93BB2AE6C83F00951A39 /* ContentView.swift */,
@@ -341,10 +341,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C9EB5532AE80033000BF55C /* RoleSetupView.swift in Sources */,
-				1C3E08D72AEBC44A00D45FD2 /* TextLoading.swift in Sources */,
 				C84E93BC2AE6C83F00951A39 /* ContentView.swift in Sources */,
 				1C9EB54F2AE7FF9A000BF55C /* HomePageView.swift in Sources */,
 				D7EE14732AEAAE52007BE48E /* MissionView.swift in Sources */,
+				1C3E08DD2AEBEB3500D45FD2 /* InformationView.swift in Sources */,
 				1C9EB55B2AE800D4000BF55C /* extensions.swift in Sources */,
 				D7EE147B2AEAAF8C007BE48E /* Experience.rcproject in Sources */,
 				1C9EB5512AE7FFBC000BF55C /* UserModel.swift in Sources */,
@@ -353,11 +353,11 @@
 				6D3A83642AE808C700524475 /* SettingsView.swift in Sources */,
 				D759F7C62AEA938000D93B87 /* MissionViewModel.swift in Sources */,
 				1C9EB55A2AE800CD000BF55C /* UserSetupView.swift in Sources */,
+				1C3E08DB2AEBEB1400D45FD2 /* LoadingView.swift in Sources */,
 				D7EE14772AEAAE88007BE48E /* AROverlayView.swift in Sources */,
 				D759F7CA2AEA941400D93B87 /* MissionsPageView.swift in Sources */,
 				D7EE14792AEAAECA007BE48E /* ARInfoCardView.swift in Sources */,
 				1C9EB55C2AE800D6000BF55C /* PermissionsView.swift in Sources */,
-				1C3E08D92AEBC44E00D45FD2 /* LoadingView.swift in Sources */,
 				D7EE14752AEAAE70007BE48E /* MissionCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
