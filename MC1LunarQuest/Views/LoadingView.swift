@@ -35,7 +35,7 @@ struct LoadingView: View {
                     Text("Lunar Quest")
                         .font(.system(size: 35))
                         .fontWeight(.heavy)
-                        .foregroundColor(.gray)
+                        .foregroundColor(.white)
                         .padding(.top)
                     Text("designed by")
                         .font(.system(size: 25))
