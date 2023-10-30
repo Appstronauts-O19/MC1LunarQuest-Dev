@@ -29,7 +29,7 @@ struct SettingsView: View {
             
             ZStack{
                 
-                Image(userData.user.role.stringValue)
+                Image("\(userData.user.role.stringValue)Close")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 230, height: 300)

@@ -31,7 +31,7 @@ struct HomePageView: View {
                             //User Image
                             Circle()
                                 .overlay(
-                                    Image(userData.user.role.stringValue)
+                                    Image("\(userData.user.role.stringValue)Close")
                                         .resizable()
                                         .scaledToFill()
                                         .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
