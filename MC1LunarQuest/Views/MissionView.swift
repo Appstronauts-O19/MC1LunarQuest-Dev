@@ -15,6 +15,7 @@ struct MissionView: View {
     
     @State private var isCameraPermissionGranted: Bool = false
     @ObservedObject var viewModel = MissionViewModel()
+    @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
     
     @EnvironmentObject var userData: UserData
     
@@ -35,17 +36,26 @@ struct MissionView: View {
                     .opacity(viewModel.missionIsOver ? 1 : 0)
                     .animation(.easeInOut(duration: 1.2), value: viewModel.missionIsOver)
                 
-
+                
             }
-            .navigationBarHidden(true)
-            .navigationTitle("")
-
+            .navigationBarBackButtonHidden(true)
+            .toolbar(content: {
+                ToolbarItem (placement: .navigationBarLeading)  {
+                    
+                    Button(action: {
+                        presentationMode.wrappedValue.dismiss()
+                    }, label: {
+                        Image(systemName: "arrowshape.backward.circle.fill")
+                            .resizable()
+                            .shadow(radius: 4)
+                            .frame(width: 35,height: 35)
+                            .foregroundColor(Color.white)
+                    })
+                }
+            })
         }
     }
-
-    
 }
-
 
 struct ARViewContainer: UIViewRepresentable {
     
@@ -237,8 +247,6 @@ class ARSessionDelegate: NSObject, ARKit.ARSessionDelegate {
             }
             return false
         }
-    
-    
 }
 
 

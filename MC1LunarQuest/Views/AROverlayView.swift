@@ -33,25 +33,6 @@ struct AROverlayView: View {
         let userRole = userData.user.role.rawValue
         NavigationStack {
             
-            //Back to Missions
-            HStack{
-                
-                NavigationLink(destination: HomePageView()) {
-                    Image(systemName: "arrowshape.backward.circle.fill")
-                        .resizable()
-                        .frame(width: 35,height: 35)
-                    
-                }
-                .navigationBarBackButtonHidden(true)
-                .alignmentGuide(.leading) { d in d[.leading] }
-                .foregroundStyle(Color.white)
-                .padding(.horizontal, 20)
-                .shadow(radius: 10)
-                
-                Spacer()
-            }
-    
-            
             VStack {
                 
                 //Information Tag
@@ -88,8 +69,8 @@ struct AROverlayView: View {
     }
 }
 
-struct AROverlayView_Previews: PreviewProvider {
-    static var previews: some View {
-        AROverlayView(currentPage: .constant(1))
-    }
+
+#Preview {
+    AROverlayView(currentPage: .constant(1))
+        .environmentObject(UserData())
 }
