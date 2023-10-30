@@ -22,7 +22,8 @@ struct MC1LunarQuestApp: App {
                         fatalError(error.localizedDescription)
                     }
                 }
-            }
+            }.environmentObject(userData)
+
     
             .task {
                 do {

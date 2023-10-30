@@ -9,6 +9,7 @@ import Foundation
 
 class MissionViewModel: ObservableObject {
     @Published var currentPage: Int = 0
+    @Published var missionIsOver : Bool = false
     @Published var isCoachingOverlayActive: Bool = true
 
 }

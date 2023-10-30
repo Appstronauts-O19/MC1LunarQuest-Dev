@@ -21,10 +21,23 @@ struct RoleSetupView: View {
                     Image(.explorer) // Use the image for Role 1
                         .resizable()
                         .aspectRatio(contentMode: .fill)
+                        .overlay(
+                            LinearGradient(
+                                gradient: Gradient(colors: [Color.black, Color.clear,Color.clear]),
+                                startPoint: .bottom,
+                                endPoint: .top
+                            ))
+                    
                 } else {
                     Image(.scientist) // Use the image for Role 2
                         .resizable()
                         .aspectRatio(contentMode: .fill)
+                        .overlay(
+                            LinearGradient(
+                                gradient: Gradient(colors: [Color.black, Color.clear,Color.clear]),
+                                startPoint: .bottom,
+                                endPoint: .top
+                            ))
                 }
                 
                 VStack {
@@ -35,10 +48,12 @@ struct RoleSetupView: View {
                         .foregroundColor(.white)
                     
                     Text("Choose your role wisely, for it will shape your journey. Each role brings its own set of fascinating facts and insights, catering to your unique interests.")
-                        .font(.system(size: 15))
+                        .font(.body)
                         .multilineTextAlignment(.center)
                         .foregroundColor(.white)
-                        .padding()
+                        .padding(.horizontal)
+                        .padding(.bottom)
+                        .padding(.top, 1)
                     
                     HStack {
                         Button("Explorer") {

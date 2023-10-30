@@ -8,7 +8,7 @@ struct UserModel: Identifiable, Codable {
     var badges: [String]
     var hasCompletedSetup : Bool
 
-    init(id: UUID = UUID(), username: String = "John Doe", role: Role = .explorer, badges: [String] = [], hasCompletedSetup: Bool = false) {
+    init(id: UUID = UUID(), username: String = "Your Name", role: Role = .explorer, badges: [String] = [], hasCompletedSetup: Bool = false) {
         self.id = id
         self.username = username
         self.role = role
@@ -34,6 +34,7 @@ extension UserModel {
 }
 
 @MainActor
+//In context of MVVM, UserData can be understood as ViewModel for UserModel.
 class UserData: ObservableObject {
     @Published var user : UserModel = UserModel()
     

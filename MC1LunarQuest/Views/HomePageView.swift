@@ -34,31 +34,40 @@ struct HomePageView: View {
                             .overlay(
                                 RoundedRectangle(cornerRadius: 25)
                                     .inset(by: 2)
-                                    .stroke(Color.purple, lineWidth: 4))
+                                    .stroke(LinearGradient(
+                                        gradient: Gradient(colors: [Color.purple, Color.purple.opacity(0.1)]),
+                                        startPoint: .bottom,
+                                        endPoint: .top
+                                    ), lineWidth: 6))
                             .padding(.bottom,60)
                         
                         VStack{
-          
-                            Image(user.role.stringValue)
-                                .resizable()
-                                .frame(width: 157, height: 300)
-                                .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-                                .padding(.top,-120)
+                            
+                            Circle()
+                                .overlay(
+                                    Image(user.role.stringValue)
+                                        .resizable()
+                                        .scaledToFill()
+                                        .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                                )
+                                .overlay(
+                                    Circle().stroke(LinearGradient(
+                                        gradient: Gradient(colors: [Color.purple, Color.purple.opacity(0.1)]),
+                                        startPoint: .bottom,
+                                        endPoint: .top
+                                    ), lineWidth: 6))
+                                .frame(width: 200, height: 200)
+                                .padding()
+                            
                             
                        
                             Text("\(user.username)")
-                                .font(
-                                    Font.custom("SF Pro", size: 30)
-                                        .weight(.bold)
-                                )
+                                .font(.title)
                                 .foregroundColor(.white)
-                                .padding(.top, -40)
+                                .padding()
                             
                             Text("\(user.role.stringValue)")
-                                .font(
-                                    Font.custom("SF Pro", size: 18)
-                                        .weight(.medium)
-                                )
+                                .font(.title2)
                                 .foregroundColor(.white)
                             
                             HStack(spacing: 20){
@@ -68,7 +77,7 @@ struct HomePageView: View {
                                         .foregroundColor(.clear)
                                         .frame(width: 54, height: 54)
                                         .background(
-                                            Image(systemName: badgeName)
+                                            Image(systemName:  )
                                                 .resizable()
                                                 .aspectRatio(contentMode: .fill)
                                                 .frame(width: 54, height: 54)

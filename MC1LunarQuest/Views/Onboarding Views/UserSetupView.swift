@@ -21,40 +21,54 @@ struct UserSetupView: View {
                 Image(.background)
                 //.resizable() doesn't work - gotta figure it out
                     .aspectRatio(contentMode: .fill)
+                    .overlay(
+                        LinearGradient(
+                            gradient: Gradient(colors: [Color.black, Color.black.opacity(0.8), Color.clear, Color.clear, Color.clear]),
+                            startPoint: .bottom,
+                            endPoint: .top
+                        ))
+                
+                ZStack(alignment: .bottom){
+                    
+                    Image(.badgeResized)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 300)
+                        .padding(.leading)
+                    
+                    
+                    Text("\(user.username)")
+                        .foregroundColor(.yellow)
+                        .bold()
+                        .padding(.leading, 20)
+                        .padding()
+                }
+                .rotationEffect(.degrees(-0.5))
+                .padding()
+                    
                 
                 VStack {
                     
-                    Spacer(minLength: 400)
+                    Spacer(minLength: 530)
                     
-                    Text("Astronaut's Name")
-                        .font(.system(size: 24))
-                        .bold()
+                    Text("Camera Access")
+                        .font(.title).bold()
                         .foregroundColor(.white)
-                    
-                    ZStack(alignment: .bottom){
-                        
-                        Image(.badgeResized)
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 300)
-                            .padding(.leading)
-                        
-                        
-                        Text("\(user.username)")
-                            .foregroundColor(.white)
-                            .padding()
-                    }
                     
                     Text("Welcome aboard on LunarQuest! \nTo make your mark in the cosmos,  \ninscribe your name below.")
-                        .font(.system(size: 15))
+                        .font(.body)
                         .multilineTextAlignment(.center)
                         .foregroundColor(.white)
+                        .padding(.horizontal)
+                        .padding(.bottom)
+                        .padding(.top, 1)
                     
                     ZStack {
                         RoundedRectangle(cornerRadius: 30)
                             .foregroundColor(.UserSetup_grey.opacity(0.6))
                             .frame(height: 50)
                             .padding(.horizontal)
+    
                         
                         HStack {
                             

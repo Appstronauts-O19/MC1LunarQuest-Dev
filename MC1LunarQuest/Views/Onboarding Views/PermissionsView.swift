@@ -36,6 +36,12 @@ struct PermissionsView: View {
                 Image("permissions")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
+                    .overlay(
+                        LinearGradient(
+                            gradient: Gradient(colors: [Color.black, Color.clear,Color.clear]),
+                            startPoint: .bottom,
+                            endPoint: .top
+                        ))
                 
                 VStack {
                     Spacer(minLength: 500)
@@ -44,10 +50,12 @@ struct PermissionsView: View {
                         .foregroundColor(.white)
                     
                     Text("To unlock the full Augmented Reality adventure, grant us permission to access your camera. It's an essential component for an immersive and captivating experience.")
-                        .font(.system(size: 15))
+                        .font(.body)
                         .multilineTextAlignment(.center)
                         .foregroundColor(.white)
                         .padding(.horizontal)
+                        .padding(.bottom)
+                        .padding(.top, 1)
                     
                     ZStack {
                         RoundedRectangle(cornerRadius: 30)
@@ -85,14 +93,14 @@ struct PermissionsView: View {
                                 
                         }
                                 
-                    }.padding()
+                    }
                     
                     HStack {
 
                         NavigationLink(destination: HomePageView(user: $user)) {
                             Label("Explore the Universe  ", systemImage: "arrowshape.forward.circle")
                                 .padding(10)
-                                .background(Color.gray.opacity(0.6))
+                                .background(Color.UserSetup_grey.opacity(0.6))
                                 .foregroundColor(.white)
                                 .clipShape(Capsule())
                             

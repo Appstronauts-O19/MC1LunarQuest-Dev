@@ -13,10 +13,11 @@ import ARKit
 
 struct MissionView: View {
     
-    
     @State private var isCameraPermissionGranted: Bool = false
     @ObservedObject var viewModel = MissionViewModel()
-
+    
+    @EnvironmentObject var userData: UserData
+    
     var body: some View {
         NavigationStack {
             ZStack{
@@ -24,11 +25,16 @@ struct MissionView: View {
                 //AR View
                 ARViewContainer(viewModel: viewModel).edgesIgnoringSafeArea(.all)
                 
-                
                 //SwiftUI Overlay View
-                AROverlayView(currentPage: $viewModel.currentPage, userRole: 0)
+                AROverlayView(currentPage: $viewModel.currentPage)
                     .opacity(viewModel.isCoachingOverlayActive ? 0 : 1)
                     .animation(.easeInOut(duration: 1.2), value: viewModel.isCoachingOverlayActive)
+                
+                //End View, badge reveal, Badge append to the UserData
+                ARMissionEndView()
+                    .opacity(viewModel.missionIsOver ? 1 : 0)
+                    .animation(.easeInOut(duration: 1.2), value: viewModel.missionIsOver)
+                
 
             }
             .navigationBarHidden(true)
@@ -42,6 +48,8 @@ struct MissionView: View {
 
 
 struct ARViewContainer: UIViewRepresentable {
+    
+    @EnvironmentObject var userData: UserData
     
     let sessionDelegate : ARSessionDelegate
     let viewModel: MissionViewModel
@@ -128,7 +136,11 @@ struct ARViewContainer: UIViewRepresentable {
     
     //Th Infromation Changer Implementation
     func thirdInput(_ entity: Entity?){
-        viewModel.currentPage = 3
+        viewModel.missionIsOver = true
+    
+        userData.user.badges.append("Badge1")
+        print(userData.user.badges)
+    
     }
 }
 

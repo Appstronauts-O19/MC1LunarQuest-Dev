@@ -10,20 +10,31 @@ import SwiftUI
 struct AROverlayView: View {
     
     @Binding var currentPage: Int
-    var userRole: Int
+    @EnvironmentObject var userData: UserData
+    
+    //Retrivs user role and passes it to userRole variable, that alters the strings passed to the information cards.
+    var userRole: Int {
+        switch userData.user.role {
+        case .explorer:
+            return 0
+        case .scientist:
+            return 1
+        }
+    }
+
     
     
     //Mission Infromation Setup
     let instructionsArray = ["Come close to the rock", "Go to the Moon Rover", "Put the samples to the Moon Rover"]
     
-    let firstInfoTitle = ["What is this place?", ""]
-    let firstInfoText = ["You are at Taurus-Littrow Valley, a region within the Apollo 17 landing site. This historic location offers a unique opportunity to collect  rock samples, to understand Moon's geological history.", ""]
+    let firstInfoTitle = ["What is this place?", "PutScienceInfoHere"]
+    let firstInfoText = ["You are at Taurus-Littrow Valley, a region within the Apollo 17 landing site. This historic location offers a unique opportunity to collect  rock samples, to understand Moon's geological history.", "PutScienceInfoHere"]
     
-    let secondInfoTitle = ["How do we test the soil?", ""]
-    let secondInfoText = ["Researchers employ techniques such as X-ray diffraction, mass spectrometry, and gas chromatography to determine the mineral composition, age, and presence of water or other vital resources.", ""]
+    let secondInfoTitle = ["How do we test the soil?", "PutScienceInfoHere"]
+    let secondInfoText = ["Researchers employ techniques such as X-ray diffraction, mass spectrometry, and gas chromatography to determine the mineral composition, age, and presence of water or other vital resources.", "PutScienceInfoHere"]
 
-    let thirdInfoTitle = ["How driving on the moon works?", ""]
-    let thirdInfoText = ["Rovers on the Moon consider the significantly lower lunar gravity, which is about 1/6 that of Earth, allowing for lighter and more efficient propulsion systems and the ability to traverse the Moon's surface with ease.", ""]
+    let thirdInfoTitle = ["How driving on the moon works?", "PutScienceInfoHere"]
+    let thirdInfoText = ["Rovers on the Moon consider the significantly lower lunar gravity, which is about 1/6 that of Earth, allowing for lighter and more efficient propulsion systems and the ability to traverse the Moon's surface with ease.", "PutScienceInfoHere"]
 
     
     
@@ -33,12 +44,13 @@ struct AROverlayView: View {
             //Back to Missions
             HStack{
                 
-                NavigationLink(destination: EmptyView()) {
+                NavigationLink(destination: MissionsPageView()) {
                     Image(systemName: "arrowshape.backward.circle.fill")
                         .resizable()
                         .frame(width: 35,height: 35)
                     
                 }
+                .navigationBarBackButtonHidden(true)
                 .alignmentGuide(.leading) { d in d[.leading] }
                 .foregroundStyle(Color.white)
                 .padding(.horizontal, 20)
@@ -86,6 +98,6 @@ struct AROverlayView: View {
 
 struct AROverlayView_Previews: PreviewProvider {
     static var previews: some View {
-        AROverlayView(currentPage: .constant(1), userRole: 0)
+        AROverlayView(currentPage: .constant(1))
     }
 }

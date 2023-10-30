@@ -18,7 +18,7 @@ struct MissionsPageView: View {
                 .foregroundStyle(Color.white)
                 .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
             
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 ForEach (viewMissionModel.missions, id: \.id){exm in
                     ZStack (alignment: .bottomLeading){
                         // Background Image

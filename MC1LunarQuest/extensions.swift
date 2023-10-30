@@ -20,6 +20,7 @@ struct PurpleButtonStyle: ButtonStyle {
     
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
+            .padding(.horizontal, UIScreen.main.bounds.width/10)
             .padding()
             .background(toggled ? Color.RoleSetup_purple : Color.UserSetup_grey) // Change the background color to purple when pressed
             .cornerRadius(40)

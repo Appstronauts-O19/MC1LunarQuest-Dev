@@ -11,20 +11,43 @@ struct SettingsView: View {
     
     @Binding var user : UserModel
     
+    var isActivated: Bool {
+        switch user.role {
+        case .explorer:
+            return true
+        case .scientist:
+            return false
+        }
+    }
+
+    
     
     var body: some View {
         
         
         NavigationStack {
             
-            Image(user.role.stringValue)
-                .resizable()
-                .frame(width: 157, height: 300)
-                .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-                .padding(.top,-80)
-            
-            
-            
+            ZStack{
+                
+                Image(user.role.stringValue)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 230, height: 300)
+                    .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                    .overlay(
+                        Circle().stroke(.purple, lineWidth: 6))
+                    //.padding(.top,-80)
+                
+                Image(systemName: "person.circle")
+                    .foregroundColor(.purple)
+                    .background(Circle().foregroundColor(.black))
+                    .scaleEffect(2.5)
+                    .padding(.top, 230)
+    
+
+            }
+
+        
             Text("Astronaut Name")
                 .font(
                     Font.custom("SF Pro", size: 30)
@@ -60,7 +83,7 @@ struct SettingsView: View {
                 .padding(.top)
                 .padding(.leading,-183)
             
-            HStack(spacing: 100) {
+            HStack() {
                 Button("Explorer") {
                     user.role = .explorer
                 }
@@ -70,8 +93,9 @@ struct SettingsView: View {
                     user.role = .scientist
                 }
                 .buttonStyle(PurpleButtonStyle(toggled : user.role == .scientist))
+                
+                
             }.padding()
-            
             
             
             Text("Allow Permissions")
