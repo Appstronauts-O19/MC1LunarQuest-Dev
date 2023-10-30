@@ -137,9 +137,11 @@ struct ARViewContainer: UIViewRepresentable {
     //Th Infromation Changer Implementation
     func thirdInput(_ entity: Entity?){
         viewModel.missionIsOver = true
-    
-        userData.user.badges.append("Badge1")
-        print(userData.user.badges)
+        
+        //Check if the badge has not been already earned, if it wasn't add it to badges list.
+        if !userData.user.badges.contains("Badge1") {
+                userData.user.badges.append("Badge1")
+            }
     
     }
 }

@@ -111,6 +111,7 @@ struct HomePageView: View {
                     
                     Button(action: {
                         
+                        
                     }) {
                         NavigationLink(destination: SettingsView()) {
                             Label("Settings", systemImage: "gearshape.fill")

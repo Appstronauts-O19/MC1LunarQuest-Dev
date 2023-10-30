@@ -153,7 +153,7 @@ struct ARMissionEndView: View {
 
                         
                         NavigationLink(destination: MissionView()) {
-                            Image(systemName:"arrow.uturn.forward")
+                            Image(systemName:"arrow.counterclockwise")
                                 .resizable()
                                 .scaleEffect(0.4)
                                 .bold()

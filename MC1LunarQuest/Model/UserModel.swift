@@ -18,9 +18,10 @@ struct UserModel: Identifiable, Codable {
 }
 
 extension UserModel {
-    enum Role: String, Codable {
-        case scientist
-        case explorer
+    enum Role: Int, Codable {
+        
+        case explorer = 0
+        case scientist = 1
 
         var stringValue: String {
             switch self {

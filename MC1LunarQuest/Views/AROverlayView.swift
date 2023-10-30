@@ -13,15 +13,6 @@ struct AROverlayView: View {
     @EnvironmentObject var userData: UserData
     
     //Retrivs user role and passes it to userRole variable, that alters the strings passed to the information cards.
-    var userRole: Int {
-        switch userData.user.role {
-        case .explorer:
-            return 0
-        case .scientist:
-            return 1
-        }
-    }
-
     
     
     //Mission Infromation Setup
@@ -39,6 +30,7 @@ struct AROverlayView: View {
     
     
     var body: some View {
+        let userRole = userData.user.role.rawValue
         NavigationStack {
             
             //Back to Missions
