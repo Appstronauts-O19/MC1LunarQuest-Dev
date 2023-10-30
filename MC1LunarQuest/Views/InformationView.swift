@@ -106,5 +106,6 @@ struct InformationView: View {
 
 #Preview {
     InformationView()
+        .environmentObject(UserData())
     
 }

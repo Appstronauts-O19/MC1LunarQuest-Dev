@@ -107,6 +107,7 @@ struct RoundedCorners: Shape {
 
 #Preview {
     MissionsPageView()
+        .environmentObject(UserData())
 }
 
 

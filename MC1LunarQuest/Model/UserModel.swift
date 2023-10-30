@@ -5,10 +5,10 @@ struct UserModel: Identifiable, Codable {
     let id: UUID
     var username: String
     var role: Role
-    var badges: [String]
+    var badges: [String] = ["placeholder1","placeholder2","placeholder1","placeholder3"]
     var hasCompletedSetup : Bool
 
-    init(id: UUID = UUID(), username: String = "Your Name", role: Role = .explorer, badges: [String] = [], hasCompletedSetup: Bool = false) {
+    init(id: UUID = UUID(), username: String = "Your Name", role: Role = .explorer, badges: [String] = ["placeholder1","placeholder2","placeholder1","placeholder3"], hasCompletedSetup: Bool = false) {
         self.id = id
         self.username = username
         self.role = role

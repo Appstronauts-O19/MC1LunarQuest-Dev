@@ -112,6 +112,6 @@ struct UserSetupView: View {
 }
 
 #Preview {
-    
     UserSetupView()
+        .environmentObject(UserData())
 }

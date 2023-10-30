@@ -88,7 +88,7 @@ struct RoleSetupView: View {
 }
 
 #Preview {
-    
     RoleSetupView()
+        .environmentObject(UserData())
 }
 

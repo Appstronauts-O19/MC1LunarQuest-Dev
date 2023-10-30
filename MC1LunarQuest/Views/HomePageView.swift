@@ -26,24 +26,9 @@ struct HomePageView: View {
                     
                     ZStack{
                         
-                        Rectangle()
-                            .padding()
-                            .foregroundColor(.clear)
-                            .frame(width: 299, height: 400)
-                            .background(.black)
-                            .cornerRadius(25)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 25)
-                                    .inset(by: 2)
-                                    .stroke(LinearGradient(
-                                        gradient: Gradient(colors: [Color.purple, Color.purple.opacity(0.1)]),
-                                        startPoint: .bottom,
-                                        endPoint: .top
-                                    ), lineWidth: 6))
-                            .padding(.bottom,60)
-                        
                         VStack{
                             
+                            //User Image
                             Circle()
                                 .overlay(
                                     Image(userData.user.role.stringValue)
@@ -58,22 +43,24 @@ struct HomePageView: View {
                                         endPoint: .top
                                     ), lineWidth: 6))
                                 .frame(width: 200, height: 200)
-                                .padding()
                             
-                            
-                       
+                            //User Name
                             Text("\(userData.user.username)")
                                 .font(.title)
+                                .bold()
                                 .foregroundColor(.white)
-                                .padding()
                             
+                            
+                            //User Role
                             Text("\(userData.user.role.stringValue)")
                                 .font(.title2)
                                 .foregroundColor(.white)
                             
+                            //Badges
                             HStack(spacing: 20){
                                 
-                                ForEach(userData.user.badges, id: \.self) { badgeName in
+                                //loop for last 4 elements of badges array.
+                                ForEach(userData.user.badges.prefix(4), id: \.self) { badgeName in
                                     Rectangle()
                                         .foregroundColor(.clear)
                                         .frame(width: 54, height: 54)
@@ -88,9 +75,26 @@ struct HomePageView: View {
                                 }
                                 
                             }
-                            .padding()
+                            
                         }
-                    }
+                        .background(
+                            Rectangle()
+                            .padding()
+                            .foregroundColor(.clear)
+                            .frame(width: 299, height: 400)
+                            .background(.black)
+                            .cornerRadius(25)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 25)
+                                    .inset(by: 2)
+                                    .stroke(LinearGradient(
+                                        gradient: Gradient(colors: [Color.purple, Color.purple.opacity(0.1)]),
+                                        startPoint: .bottom,
+                                        endPoint: .top
+                                    ), lineWidth: 6))
+                            .padding(.bottom,30)
+                        )
+                    }.padding(50)
                     
                     Button(action: {
                         // Azione da eseguire quando il bottone viene premuto
@@ -156,4 +160,5 @@ struct HomePageView: View {
 
 #Preview {
     HomePageView()
+        .environmentObject(UserData())
 }

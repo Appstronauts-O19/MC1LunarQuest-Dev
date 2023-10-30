@@ -140,7 +140,7 @@ struct ARViewContainer: UIViewRepresentable {
         
         //Check if the badge has not been already earned, if it wasn't add it to badges list.
         if !userData.user.badges.contains("Badge1") {
-                userData.user.badges.append("Badge1")
+                userData.user.badges.insert("Badge1", at: 0)
             }
     
     }
@@ -244,4 +244,5 @@ class ARSessionDelegate: NSObject, ARKit.ARSessionDelegate {
 
 #Preview {
     MissionView()
+        .environmentObject(UserData())
 }

@@ -121,6 +121,6 @@ struct PermissionsView: View {
 }
 
 #Preview {
-    
     PermissionsView()
+        .environmentObject(UserData())
 }
