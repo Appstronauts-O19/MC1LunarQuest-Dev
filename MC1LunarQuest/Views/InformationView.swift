@@ -10,7 +10,8 @@ import SwiftUI
 
 struct InformationView: View {
     
-    @Binding var user : UserModel
+    @EnvironmentObject var userData: UserData
+
     
     var body: some View {
         
@@ -76,12 +77,12 @@ struct InformationView: View {
                         .opacity(0.8)
                         .padding(.horizontal,50)
                     
-                    if user.hasCompletedSetup == false{
+                    if userData.user.hasCompletedSetup == false{
                         Button(action: {
                             
                         }) {
                             NavigationLink{
-                                UserSetupView(user: $user)
+                                UserSetupView()
                             }
                             label: {Label("START", systemImage: "")
                             }
@@ -104,6 +105,6 @@ struct InformationView: View {
 }
 
 #Preview {
-    InformationView(user: .constant(UserData().user))
+    InformationView()
     
 }

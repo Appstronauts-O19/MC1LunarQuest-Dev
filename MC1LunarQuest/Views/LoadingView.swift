@@ -12,16 +12,17 @@ struct LoadingView: View {
     @State private var isActive = false
     @State private var size = 0.8
     @State private var opacity = 0.5
-    @Binding var user: UserModel
+    
+    @EnvironmentObject var userData: UserData
     
     var body: some View {
         
         if isActive {
-            if user.hasCompletedSetup{
-                HomePageView(user: $user)
+            if userData.user.hasCompletedSetup{
+                HomePageView()
             }
             else{
-                InformationView(user: $user)
+                InformationView()
             }
         }else {
             ZStack{
@@ -70,6 +71,6 @@ struct LoadingView: View {
 }
 
 #Preview {
-    LoadingView(user: .constant(UserData().user))
+    LoadingView()
 }
 

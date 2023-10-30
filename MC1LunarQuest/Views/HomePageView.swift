@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct HomePageView: View {
-    @Binding var user : UserModel
+    
+    @EnvironmentObject var userData : UserData
     //@State private var exampleUser = UserModel(badges: ["moon.stars.fill",  "heart.circle.fill", "house.circle.fill"])
     
     var body: some View {
@@ -45,7 +46,7 @@ struct HomePageView: View {
                             
                             Circle()
                                 .overlay(
-                                    Image(user.role.stringValue)
+                                    Image(userData.user.role.stringValue)
                                         .resizable()
                                         .scaledToFill()
                                         .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
@@ -61,23 +62,23 @@ struct HomePageView: View {
                             
                             
                        
-                            Text("\(user.username)")
+                            Text("\(userData.user.username)")
                                 .font(.title)
                                 .foregroundColor(.white)
                                 .padding()
                             
-                            Text("\(user.role.stringValue)")
+                            Text("\(userData.user.role.stringValue)")
                                 .font(.title2)
                                 .foregroundColor(.white)
                             
                             HStack(spacing: 20){
                                 
-                                ForEach(user.badges, id: \.self) { badgeName in
+                                ForEach(userData.user.badges, id: \.self) { badgeName in
                                     Rectangle()
                                         .foregroundColor(.clear)
                                         .frame(width: 54, height: 54)
                                         .background(
-                                            Image(systemName:  )
+                                            Image(badgeName)
                                                 .resizable()
                                                 .aspectRatio(contentMode: .fill)
                                                 .frame(width: 54, height: 54)
@@ -111,7 +112,7 @@ struct HomePageView: View {
                     Button(action: {
                         
                     }) {
-                        NavigationLink(destination: SettingsView(user: $user)) {
+                        NavigationLink(destination: SettingsView()) {
                             Label("Settings", systemImage: "gearshape.fill")
                                 .font(Font.custom("SF Pro", size: 17))
                                 .foregroundColor(.white)
@@ -128,7 +129,7 @@ struct HomePageView: View {
                         // Azione da eseguire quando il bottone viene premuto
                     }) {
                         NavigationLink {
-                            InformationView(user: $user)
+                            InformationView()
                         }
                         label: {
                             Label("Info", systemImage: "info.circle")
@@ -153,5 +154,5 @@ struct HomePageView: View {
 }
 
 #Preview {
-    HomePageView(user: .constant(UserData().user))
+    HomePageView()
 }

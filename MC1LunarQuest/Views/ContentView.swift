@@ -17,7 +17,7 @@ struct ContentView: View {
         
         NavigationView{
             
-            LoadingView(user: $user)
+            LoadingView()
             .onChange(of: scenePhase, { oldValue, newValue in
                 if newValue == .inactive { saveAction() }
             })

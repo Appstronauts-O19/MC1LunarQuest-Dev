@@ -25,7 +25,7 @@ class CameraPermissionViewModel: ObservableObject {
 
 struct PermissionsView: View {
     
-    @Binding var user : UserModel
+    @EnvironmentObject var userData: UserData
     
     @ObservedObject var viewModel = CameraPermissionViewModel()
     @State private var isAlertPresented = false
@@ -86,7 +86,7 @@ struct PermissionsView: View {
                                         viewModel.requestCameraPermission()
                                         }
                                     isAlertPresented = false
-                                    user.hasCompletedSetup = true
+                                    userData.user.hasCompletedSetup = true
                                     })
                             
                             Spacer(minLength: 10)
@@ -97,7 +97,7 @@ struct PermissionsView: View {
                     
                     HStack {
 
-                        NavigationLink(destination: HomePageView(user: $user)) {
+                        NavigationLink(destination: HomePageView()) {
                             Label("Explore the Universe  ", systemImage: "arrowshape.forward.circle")
                                 .padding(10)
                                 .background(Color.UserSetup_grey.opacity(0.6))
@@ -122,5 +122,5 @@ struct PermissionsView: View {
 
 #Preview {
     
-    PermissionsView(user: .constant(UserData().user))
+    PermissionsView()
 }

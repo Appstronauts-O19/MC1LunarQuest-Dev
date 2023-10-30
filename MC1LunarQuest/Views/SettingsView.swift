@@ -9,10 +9,10 @@ import SwiftUI
 
 struct SettingsView: View {
     
-    @Binding var user : UserModel
+    @EnvironmentObject var userData: UserData
     
     var isActivated: Bool {
-        switch user.role {
+        switch userData.user.role {
         case .explorer:
             return true
         case .scientist:
@@ -29,7 +29,7 @@ struct SettingsView: View {
             
             ZStack{
                 
-                Image(user.role.stringValue)
+                Image(userData.user.role.stringValue)
                     .resizable()
                     .scaledToFit()
                     .frame(width: 230, height: 300)
@@ -67,7 +67,7 @@ struct SettingsView: View {
                         .inset(by: 0.5)
                         .stroke(Color(red: 0.27, green: 0.27, blue: 0.27), lineWidth: 1)
                         .overlay(
-                            TextField("Username: ", text: $user.username)
+                            TextField("Username: ", text: $userData.user.username)
                                 .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
                                 .foregroundColor(.white)
                         )
@@ -85,14 +85,14 @@ struct SettingsView: View {
             
             HStack() {
                 Button("Explorer") {
-                    user.role = .explorer
+                    userData.user.role = .explorer
                 }
-                .buttonStyle(PurpleButtonStyle(toggled: user.role == .explorer))
+                .buttonStyle(PurpleButtonStyle(toggled: userData.user.role == .explorer))
                 
                 Button("Scientist") {
-                    user.role = .scientist
+                    userData.user.role = .scientist
                 }
-                .buttonStyle(PurpleButtonStyle(toggled : user.role == .scientist))
+                .buttonStyle(PurpleButtonStyle(toggled : userData.user.role == .scientist))
                 
                 
             }.padding()
@@ -132,5 +132,5 @@ struct SettingsView: View {
 }
 
 #Preview {
-    SettingsView(user: .constant(UserData().user))
+    SettingsView()
 }

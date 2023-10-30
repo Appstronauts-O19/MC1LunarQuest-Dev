@@ -44,7 +44,7 @@ struct AROverlayView: View {
             //Back to Missions
             HStack{
                 
-                NavigationLink(destination: MissionsPageView()) {
+                NavigationLink(destination: HomePageView()) {
                     Image(systemName: "arrowshape.backward.circle.fill")
                         .resizable()
                         .frame(width: 35,height: 35)

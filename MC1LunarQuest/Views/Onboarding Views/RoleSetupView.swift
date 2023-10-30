@@ -10,14 +10,14 @@ import SwiftUI
 
 struct RoleSetupView: View {
     
-    @Binding var user : UserModel
+    @EnvironmentObject var userData: UserData
         
     var body: some View {
         
         NavigationStack{
             
             ZStack {
-                if user.role == .explorer {
+                if userData.user.role == .explorer {
                     Image(.explorer) // Use the image for Role 1
                         .resizable()
                         .aspectRatio(contentMode: .fill)
@@ -57,18 +57,18 @@ struct RoleSetupView: View {
                     
                     HStack {
                         Button("Explorer") {
-                            user.role  = .explorer
+                            userData.user.role  = .explorer
                         }
-                        .buttonStyle(PurpleButtonStyle(toggled: user.role == .explorer))
+                        .buttonStyle(PurpleButtonStyle(toggled: userData.user.role == .explorer))
                         
                         Button("Scientist") {
-                            user.role  = .scientist
+                            userData.user.role  = .scientist
                         }
-                        .buttonStyle(PurpleButtonStyle(toggled : user.role == .scientist))
+                        .buttonStyle(PurpleButtonStyle(toggled : userData.user.role == .scientist))
                     }.padding()
                     
                     HStack{
-                        NavigationLink(destination: PermissionsView(user: $user)){
+                        NavigationLink(destination: PermissionsView()){
                             Label("Allow Permissions  ", systemImage: "arrowshape.forward.circle")
                                 .padding(10)
                                 .background(Color.UserSetup_grey.opacity(0.6))
@@ -89,6 +89,6 @@ struct RoleSetupView: View {
 
 #Preview {
     
-    RoleSetupView(user: .constant(UserData().user))
+    RoleSetupView()
 }
 
