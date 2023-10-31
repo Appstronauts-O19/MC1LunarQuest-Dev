@@ -11,6 +11,7 @@ struct ARMissionEndView: View {
     
     @State private var scale: CGFloat = 1.0
     @State var isRotating = false
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
             ZStack (alignment: .center){
@@ -136,7 +137,9 @@ struct ARMissionEndView: View {
                     
                     //Bottom UI Elements
                     HStack{
-                        NavigationLink(destination: MissionsPageView()) {
+                        Button(action: {
+                            presentationMode.wrappedValue.dismiss()
+                        }, label: {
                             HStack{
                                 Image(systemName: "arrowshape.left.circle")
                                     .resizable()
@@ -149,7 +152,8 @@ struct ARMissionEndView: View {
                             .foregroundStyle(Color.white)
                             .background(Color.purple)
                             .clipShape(Capsule())
-                        }.navigationBarBackButtonHidden(true)
+                        })
+                        .navigationBarBackButtonHidden(true)
 
                         
                         NavigationLink(destination: MissionView()) {
