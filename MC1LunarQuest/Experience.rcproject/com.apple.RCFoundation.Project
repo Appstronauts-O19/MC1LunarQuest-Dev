@@ -31,6 +31,37 @@
                                     {
                                       "configurationBox" : {
                                         "configuration" : {
+                                          "target" : [
+                                            "33DD621A-B915-4CD8-8538-5B1072C6715A"
+                                          ],
+                                          "userIdentifier" : "sampleTaken"
+                                        },
+                                        "name" : {
+                                          "type" : "custom"
+                                        }
+                                      },
+                                      "identifier" : "013E9456-8FE2-4B8C-83E0-E25F0073FC3B",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "2C47576E-EB99-45EE-915A-92E3F47C3323",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        },
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
                                           "audioType" : "play",
                                           "filePath" : "audio:3acd492d3c2595fb90332a23a6f3d997\/Drilling%20Sound.mp3",
                                           "loops" : false,
@@ -52,37 +83,6 @@
                                 }
                               ],
                               "identifier" : "07DD457C-1AF3-4952-90DA-CED1A47ED7B6",
-                              "isEnabled" : true
-                            }
-                          ],
-                          "__version" : 1
-                        },
-                        {
-                          "__content" : [
-                            {
-                              "configurations" : [
-                                {
-                                  "__content" : [
-                                    {
-                                      "configurationBox" : {
-                                        "configuration" : {
-                                          "target" : [
-                                            "33DD621A-B915-4CD8-8538-5B1072C6715A"
-                                          ],
-                                          "userIdentifier" : "sampleTaken"
-                                        },
-                                        "name" : {
-                                          "type" : "custom"
-                                        }
-                                      },
-                                      "identifier" : "013E9456-8FE2-4B8C-83E0-E25F0073FC3B",
-                                      "isEnabled" : true
-                                    }
-                                  ],
-                                  "__version" : 1
-                                }
-                              ],
-                              "identifier" : "2C47576E-EB99-45EE-915A-92E3F47C3323",
                               "isEnabled" : true
                             }
                           ],
@@ -539,9 +539,9 @@
                   0.61399174,
                   0.5675824,
                   0,
-                  7.236279,
-                  7.223055,
-                  5.5510764,
+                  6.4184294,
+                  6.56591,
+                  7.0523205,
                   1
                 ],
                 "sceneTransform" : [

@@ -1,13 +1,13 @@
 [
   {
+    "displayName" : "Lunar Rover AR.reality",
     "libraryIdentifier" : "11685f9e3491e95933aa543c150cf99a",
-    "format" : "model",
-    "displayName" : "Lunar Rover AR.reality"
+    "format" : "model"
   },
   {
+    "displayName" : "Moon_Rock_2.usdz",
     "libraryIdentifier" : "2e432f7c119dbb8e322aa0234e9c9f95",
-    "format" : "model",
-    "displayName" : "Moon_Rock_2.usdz"
+    "format" : "model"
   },
   {
     "displayName" : "cirlce.png",
@@ -15,8 +15,8 @@
     "format" : "image"
   },
   {
-    "displayName" : "Drilling Sound.mp3",
     "format" : "audio",
+    "displayName" : "Drilling Sound.mp3",
     "libraryIdentifier" : "3acd492d3c2595fb90332a23a6f3d997"
   }
 ]

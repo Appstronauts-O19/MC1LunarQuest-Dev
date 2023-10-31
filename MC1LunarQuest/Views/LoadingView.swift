@@ -28,26 +28,15 @@ struct LoadingView: View {
             ZStack{
                 Color(.black).ignoresSafeArea()
                 VStack{
-                    Image(.frame9)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 300.0)
-                        .clipShape(.rect(cornerRadius: 100))
-                    Text("Lunar Quest")
-                        .font(.system(size: 35))
-                        .fontWeight(.heavy)
-                        .foregroundColor(.white)
-                        .padding(.top)
-                    Text("designed by")
-                        .font(.system(size: 25))
-                        .fontWeight(.semibold)
+                    HStack{
+                            Text("Made with")
+                            Image(systemName: "heart.fill")
+                                .foregroundColor(.pink)
+                            Text("by Appstronauts")
+                    }
+                    Text("Apple Developer Academy, Naples")
+                        .font(.footnote)
                         .foregroundColor(.gray)
-                        .padding(.top)
-                    Text("Appstronauts")
-                        .font(.system(size: 30))
-                        .fontWeight(.semibold)
-                        .foregroundColor(.gray)
-                        
                 }
                 .scaleEffect(size)
                 .opacity(opacity)

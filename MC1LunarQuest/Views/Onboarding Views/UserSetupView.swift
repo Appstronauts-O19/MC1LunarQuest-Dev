@@ -52,7 +52,7 @@ struct UserSetupView: View {
                     
                     Spacer(minLength: 530)
                     
-                    Text("Camera Access")
+                    Text("Pick Your Name")
                         .font(.title).bold()
                         .foregroundColor(.white)
                     
