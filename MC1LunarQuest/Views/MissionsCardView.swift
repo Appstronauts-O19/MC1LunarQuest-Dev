@@ -11,7 +11,8 @@ struct MissionCardView: View {
     
     var mission: MissionModel
     @State private var cardScale: CGFloat = 1.0
-    
+    @State private var shouldNavigate = false
+
     var body: some View {
     
         // Background Image
@@ -47,21 +48,36 @@ struct MissionCardView: View {
                             //Time Requiered
                             HStack{
                                 Image(systemName: "timer")
+                                    .font(.subheadline)
                                     .bold()
-                                Text("\(mission.timeRequirement)m")
-                                    .font(.body)
+                                    .foregroundColor(.white.opacity(0.9))
+                                    .foregroundStyle(.ultraThinMaterial)
+                                    .blendMode(.plusLighter)
+                                
+                                Text("\(mission.timeRequirement)min")
+                                    .font(.subheadline)
                                     .bold()
+                                    .foregroundColor(.white.opacity(0.9))
+                                    .foregroundStyle(.ultraThinMaterial)
+                                    .blendMode(.plusLighter)
                             }.padding(.trailing)
                             
                             //Space Requiered
                             HStack{
                                 Image("ar")
                                     .resizable()
-                                    .frame(width: 25, height: 25)
+                                    .frame(width: 20, height: 20)
                                     .bold()
-                                Text("\(mission.spaceRequirement)m")
-                                    .font(.body)
+                                    .foregroundColor(.white.opacity(0.9))
+                                    .foregroundStyle(.ultraThinMaterial)
+                                    .blendMode(.plusLighter)
+                                
+                                Text("\(mission.spaceRequirement)m²")
+                                    .font(.subheadline)
                                     .bold()
+                                    .foregroundColor(.white.opacity(0.9))
+                                    .foregroundStyle(.ultraThinMaterial)
+                                    .blendMode(.plusLighter)
                             }
                             
                         }
@@ -72,12 +88,38 @@ struct MissionCardView: View {
                             VStack(alignment: .leading) {
                                 Text(mission.missionDescription)
                                     .font(.subheadline)
-                                    .foregroundColor(.white)
+                                    .foregroundColor(.white.opacity(0.9))
+                                    .foregroundStyle(.ultraThinMaterial)
+                                    .blendMode(.plusLighter)
                             }
                             .padding()
                             
                             Spacer()
                             
+//                            Button(action: {
+//                                withAnimation(.easeInOut(duration: 0.2)) {
+//                                    cardScale = 0.98
+//                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+//                                        withAnimation(.easeIn(duration: 0.5)) { // <- Apply custom animation here
+//                                                           shouldNavigate = true
+//                                        }
+//                                    }
+//                                }
+//                            }) {
+//                                HStack {
+//                                    Image(systemName: "play.fill")
+//                                    Text("Play")
+//                                }
+//                                .foregroundStyle(.purple)
+//                                .tint(.white)
+//                                .buttonStyle(.borderedProminent)
+//                                .buttonBorderShape(.capsule)
+//                                .padding()
+//                            }.navigationDestination(isPresented: $shouldNavigate, destination: { MissionView()
+//                                .transition(.opacity)})
+
+
+
                             NavigationLink(destination: MissionView()){
                                 Image(systemName: "play.fill")
                                 Text("Play")
@@ -87,7 +129,7 @@ struct MissionCardView: View {
                             .buttonStyle(.borderedProminent)
                             .buttonBorderShape(.capsule)
                             .padding()
-                            //THIS BREAKS IT!
+                            //THIS BREAKS IT! Maybe becasue animation doesn't finish?
 //                            .onLongPressGesture(minimumDuration: .infinity, maximumDistance: .infinity, pressing:                             { pressing in
 //                                withAnimation {
 //                                    cardScale = pressing ? 0.98 : 1.0

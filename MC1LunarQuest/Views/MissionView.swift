@@ -10,6 +10,9 @@ import SwiftUI
 import RealityKit
 import ARKit
 
+//Haptics
+import CoreHaptics
+
 
 struct MissionView: View {
     
@@ -18,7 +21,8 @@ struct MissionView: View {
     @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
     
     @EnvironmentObject var userData: UserData
-    
+    @State private var opacity: Double = 1
+
     var body: some View {
         NavigationStack {
             ZStack{
@@ -71,6 +75,7 @@ struct ARViewContainer: UIViewRepresentable {
 
     func makeUIView(context: Context) -> ARView {
         
+    
         let arView = ARView(frame: .zero)
         
         
@@ -124,6 +129,12 @@ struct ARViewContainer: UIViewRepresentable {
         anchor.actions.sampleTaken.onAction = firstInput(_:)
         anchor.actions.roverInfo.onAction = secondInput(_:)
         anchor.actions.missionEnded.onAction = thirdInput(_:)
+        
+        
+        //HAPTICS
+        var supportsHaptics: Bool {
+            return CHHapticEngine.capabilitiesForHardware().supportsHaptics
+        }
 
 
         
@@ -138,6 +149,7 @@ struct ARViewContainer: UIViewRepresentable {
     func firstInput(_ entity: Entity?){
         print("💚 First Event was Triggered")
         viewModel.currentPage = 1
+        playHapticForSeconds(3)
     }
     
     //Second Infromation Changer Implementation
@@ -160,6 +172,36 @@ struct ARViewContainer: UIViewRepresentable {
         print(viewModel.missionIsOver)
     
     }
+    
+    func playHapticForSeconds(_ seconds: Double) {
+        do {
+            // Create a haptic engine
+            let hapticEngine = try CHHapticEngine()
+            
+            // Create a continuous haptic pattern
+            let continuousPattern = try CHHapticPattern(events: [
+                CHHapticEvent(eventType: .hapticContinuous, parameters: [
+                    CHHapticEventParameter(parameterID: .hapticIntensity, value: 0.5),
+                    CHHapticEventParameter(parameterID: .hapticSharpness, value: 0.5)
+                ], relativeTime: 0, duration: seconds)
+            ], parameters: [])
+            
+            // Start the haptic engine
+            try hapticEngine.start()
+            
+            // Play the pattern
+            let player = try hapticEngine.makePlayer(with: continuousPattern)
+            try player.start(atTime: CHHapticTimeImmediate)
+            
+            // Stop the engine after the pattern completes
+            DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+                try? hapticEngine.stop()
+            }
+        } catch let error {
+            print("Haptic error: \(error.localizedDescription)")
+        }
+    }
+
 }
 
 
