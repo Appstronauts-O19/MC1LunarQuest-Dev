@@ -43,7 +43,7 @@ struct MissionView: View {
                 ToolbarItem (placement: .navigationBarLeading)  {
                     
                     Button(action: {
-                        presentationMode.wrappedValue.dismiss()
+                       presentationMode.wrappedValue.dismiss()
                     }, label: {
                         Image(systemName: "arrowshape.backward.circle.fill")
                             .resizable()
@@ -136,22 +136,28 @@ struct ARViewContainer: UIViewRepresentable {
     
     //First Infromation Changer Implementation
     func firstInput(_ entity: Entity?){
+        print("💚 First Event was Triggered")
         viewModel.currentPage = 1
     }
     
     //Second Infromation Changer Implementation
     func secondInput(_ entity: Entity?){
+        print("💚 Second Event was Triggered")
         viewModel.currentPage = 2
     }
     
     //Th Infromation Changer Implementation
     func thirdInput(_ entity: Entity?){
+        print("💚 Third Event was Triggered")
         viewModel.missionIsOver = true
         
         //Check if the badge has not been already earned, if it wasn't add it to badges list.
         if !userData.user.badges.contains("Badge1") {
                 userData.user.badges.insert("Badge1", at: 0)
             }
+        
+        print("userData updated with the badge")
+        print(viewModel.missionIsOver)
     
     }
 }

@@ -20,43 +20,8 @@ struct MissionsPageView: View {
             
             ScrollView(showsIndicators: false) {
                 ForEach (viewMissionModel.missions, id: \.id){exm in
-                    ZStack (alignment: .bottomLeading){
-                        // Background Image
-                        Image(exm.missionImage)
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .shadow(radius: 10)
-                            .overlay(alignment: .bottom , content:{
-                                HStack{
-                                    VStack(alignment: .leading) {
-                                        Text(exm.missionName)
-                                            .font(.headline)
-                                            .foregroundColor(.white)
-                                        Text(exm.missionDescription)
-                                            .font(.subheadline)
-                                            .foregroundColor(.white)
-                                    }
-                                    .padding()
-                                    
-                                    Spacer()
-                                    
-                                    NavigationLink(destination: MissionView()){
-                                        Image(systemName: "play.fill")
-                                        Text("Play")
-                                    }
-                                    .foregroundStyle(.purple)
-                                    .tint(.white)
-                                    .buttonStyle(.borderedProminent)
-                                    .buttonBorderShape(.capsule)
-                                    .padding()
-                                    
-                                }
-                                .background(.ultraThinMaterial)
-                                }
-                            )
-                            .clipShape(RoundedRectangle(cornerRadius: 25))
-                    }
-                    .padding()
+                    MissionCardView(mission: exm)
+                        .padding()
                 }
             }
             

@@ -31,41 +31,6 @@
                                     {
                                       "configurationBox" : {
                                         "configuration" : {
-                                          "audioType" : "play",
-                                          "filePath" : "audio:3acd492d3c2595fb90332a23a6f3d997\/Drilling%20Sound.mp3",
-                                          "loops" : false,
-                                          "multiplePerformType" : "ignore request",
-                                          "target" : [
-                                            "33DD621A-B915-4CD8-8538-5B1072C6715A"
-                                          ],
-                                          "volume" : 0.46215224847560976
-                                        },
-                                        "name" : {
-                                          "type" : "audio"
-                                        }
-                                      },
-                                      "identifier" : "3405A357-C1E7-4F6F-AE52-EA90DAF69E68",
-                                      "isEnabled" : true
-                                    }
-                                  ],
-                                  "__version" : 1
-                                }
-                              ],
-                              "identifier" : "07DD457C-1AF3-4952-90DA-CED1A47ED7B6",
-                              "isEnabled" : true
-                            }
-                          ],
-                          "__version" : 1
-                        },
-                        {
-                          "__content" : [
-                            {
-                              "configurations" : [
-                                {
-                                  "__content" : [
-                                    {
-                                      "configurationBox" : {
-                                        "configuration" : {
                                           "target" : [
                                             "33DD621A-B915-4CD8-8538-5B1072C6715A"
                                           ],
@@ -83,6 +48,41 @@
                                 }
                               ],
                               "identifier" : "2C47576E-EB99-45EE-915A-92E3F47C3323",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        },
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "audioType" : "play",
+                                          "filePath" : "audio:3acd492d3c2595fb90332a23a6f3d997\/Drilling%20Sound.mp3",
+                                          "loops" : false,
+                                          "multiplePerformType" : "ignore request",
+                                          "target" : [
+                                            "33DD621A-B915-4CD8-8538-5B1072C6715A"
+                                          ],
+                                          "volume" : 0.5150533536585366
+                                        },
+                                        "name" : {
+                                          "type" : "audio"
+                                        }
+                                      },
+                                      "identifier" : "3405A357-C1E7-4F6F-AE52-EA90DAF69E68",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "07DD457C-1AF3-4952-90DA-CED1A47ED7B6",
                               "isEnabled" : true
                             }
                           ],
@@ -106,7 +106,7 @@
                             {
                               "configurationBox" : {
                                 "configuration" : {
-                                  "distance" : 0.82119554,
+                                  "distance" : 0.8308805,
                                   "target" : [
                                     "33DD621A-B915-4CD8-8538-5B1072C6715A"
                                   ],
@@ -186,7 +186,7 @@
                             {
                               "configurationBox" : {
                                 "configuration" : {
-                                  "distance" : 2.4816272,
+                                  "distance" : 1.245909,
                                   "target" : [
                                     "A1FA845A-A947-4083-9084-44F1BBACD60B"
                                   ],
@@ -227,7 +227,7 @@
                                       "configurationBox" : {
                                         "configuration" : {
                                           "target" : [
-                                            "76A6CA0A-2DCD-4C7D-8F78-259AF86586F6"
+
                                           ],
                                           "userIdentifier" : "missionEnded"
                                         },
@@ -266,9 +266,9 @@
                             {
                               "configurationBox" : {
                                 "configuration" : {
-                                  "distance" : 0.71367997,
+                                  "distance" : 0.67401844,
                                   "target" : [
-                                    "76A6CA0A-2DCD-4C7D-8F78-259AF86586F6"
+                                    "A1FA845A-A947-4083-9084-44F1BBACD60B"
                                   ],
                                   "type" : 0
                                 },
@@ -363,9 +363,9 @@
                         0,
                         5.930713,
                         0,
-                        -3.5730996,
+                        -1.5065169,
                         6.055832e-05,
-                        3.986834,
+                        1.738677,
                         1
                       ]
                     }
@@ -374,59 +374,7 @@
                   "38CFCC53-02B8-439D-B504-5AD6828864F6" : null,
                   "79CB490D-F552-49D9-8B06-8C10EAD61780" : null,
                   "87E49071-7B92-47DD-8E6D-AAA3587682B8" : null,
-                  "367BD1AD-7F40-4842-93FC-A9008EF70303" : {
-                    "overrides" : {
-                      "arguments" : [
-                        [
-                          "material",
-                          {
-                            "typeName" : "String",
-                            "value" : "clayTerracotta"
-                          }
-                        ],
-                        [
-                          "type",
-                          {
-                            "typeName" : "String",
-                            "value" : "box"
-                          }
-                        ]
-                      ],
-                      "factory" : {
-                        "identifier" : "com.apple.rc.af.CoreAssetFactories.PrimitiveShapeAssetFactory",
-                        "version" : "1.0"
-                      },
-                      "runtimeAttributes" : [
-                        [
-                          "RuntimeIdentifier",
-                          {
-                            "typeName" : "UUID",
-                            "value" : "76A6CA0A-2DCD-4C7D-8F78-259AF86586F6"
-                          }
-                        ]
-                      ]
-                    },
-                    "transform" : {
-                      "matrix" : [
-                        0.009999736,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0.009999736,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0.009999736,
-                        0,
-                        -3.619319,
-                        0.44054866,
-                        3.9890327,
-                        1
-                      ]
-                    }
-                  },
+                  "367BD1AD-7F40-4842-93FC-A9008EF70303" : null,
                   "476DE374-F468-47E1-96DD-59DA970CD6B3" : null,
                   "599D6F81-D98E-4578-B17A-F16F34BCA167" : null,
                   "1002CFD3-5114-4581-91A0-E0787CFF310E" : null,
@@ -504,7 +452,7 @@
                         0,
                         -7.0710616,
                         0,
-                        2.6335056,
+                        1.9041533,
                         0.335007,
                         -0.3512733,
                         1
@@ -527,21 +475,21 @@
               "title" : "Scene",
               "viewTransform" : {
                 "cameraTransform" : [
-                  0.71908456,
-                  2.459558e-09,
-                  -0.69492245,
+                  0.9107375,
+                  2.1918598e-08,
+                  0.41298562,
                   0,
-                  -0.4266767,
-                  0.7893125,
-                  -0.44151202,
+                  0.08128724,
+                  0.980438,
+                  -0.17925882,
                   0,
-                  0.54851097,
-                  0.61399174,
-                  0.5675824,
+                  -0.4049068,
+                  0.19682814,
+                  0.89292175,
                   0,
-                  7.236279,
-                  7.223055,
-                  5.5510764,
+                  -3.7056947,
+                  0.41838554,
+                  4.2311354,
                   1
                 ],
                 "sceneTransform" : [

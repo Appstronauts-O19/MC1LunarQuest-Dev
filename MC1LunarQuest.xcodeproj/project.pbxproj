@@ -27,6 +27,7 @@
 		D759F7C62AEA938000D93B87 /* MissionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D759F7C52AEA938000D93B87 /* MissionViewModel.swift */; };
 		D759F7CA2AEA941400D93B87 /* MissionsPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D759F7C92AEA941400D93B87 /* MissionsPageView.swift */; };
 		D759F7CF2AEA9A8300D93B87 /* MissionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D759F7CE2AEA9A8300D93B87 /* MissionModel.swift */; };
+		D7A9C18A2AF1872500465936 /* MissionsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A9C1892AF1872500465936 /* MissionsCardView.swift */; };
 		D7EE14732AEAAE52007BE48E /* MissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EE14722AEAAE52007BE48E /* MissionView.swift */; };
 		D7EE14772AEAAE88007BE48E /* AROverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EE14762AEAAE88007BE48E /* AROverlayView.swift */; };
 		D7EE14792AEAAECA007BE48E /* ARInfoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EE14782AEAAECA007BE48E /* ARInfoCardView.swift */; };
@@ -74,6 +75,7 @@
 		D759F7C52AEA938000D93B87 /* MissionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MissionViewModel.swift; path = ../Views/MissionViewModel.swift; sourceTree = "<group>"; };
 		D759F7C92AEA941400D93B87 /* MissionsPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionsPageView.swift; sourceTree = "<group>"; };
 		D759F7CE2AEA9A8300D93B87 /* MissionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionModel.swift; sourceTree = "<group>"; };
+		D7A9C1892AF1872500465936 /* MissionsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionsCardView.swift; sourceTree = "<group>"; };
 		D7EE14722AEAAE52007BE48E /* MissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionView.swift; sourceTree = "<group>"; };
 		D7EE14762AEAAE88007BE48E /* AROverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AROverlayView.swift; sourceTree = "<group>"; };
 		D7EE14782AEAAECA007BE48E /* ARInfoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARInfoCardView.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				D759F7CB2AEA972000D93B87 /* Onboarding Views */,
 				D759F7C92AEA941400D93B87 /* MissionsPageView.swift */,
 				D7EE14722AEAAE52007BE48E /* MissionView.swift */,
+				D7A9C1892AF1872500465936 /* MissionsCardView.swift */,
 				D7EE14762AEAAE88007BE48E /* AROverlayView.swift */,
 				D7EE14782AEAAECA007BE48E /* ARInfoCardView.swift */,
 				C8C209DD2AEAB2960056CF78 /* ARMissionEndView.swift */,
@@ -203,8 +206,8 @@
 		D759F7CB2AEA972000D93B87 /* Onboarding Views */ = {
 			isa = PBXGroup;
 			children = (
-				1C9EB5522AE80033000BF55C /* RoleSetupView.swift */,
 				1C9EB5542AE80049000BF55C /* UserSetupView.swift */,
+				1C9EB5522AE80033000BF55C /* RoleSetupView.swift */,
 				1C9EB5582AE80077000BF55C /* PermissionsView.swift */,
 			);
 			path = "Onboarding Views";
@@ -355,6 +358,7 @@
 				1C9EB55A2AE800CD000BF55C /* UserSetupView.swift in Sources */,
 				1C3E08DB2AEBEB1400D45FD2 /* LoadingView.swift in Sources */,
 				D7EE14772AEAAE88007BE48E /* AROverlayView.swift in Sources */,
+				D7A9C18A2AF1872500465936 /* MissionsCardView.swift in Sources */,
 				D759F7CA2AEA941400D93B87 /* MissionsPageView.swift in Sources */,
 				D7EE14792AEAAECA007BE48E /* ARInfoCardView.swift in Sources */,
 				1C9EB55C2AE800D6000BF55C /* PermissionsView.swift in Sources */,

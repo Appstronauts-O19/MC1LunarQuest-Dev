@@ -35,7 +35,6 @@ struct ARMissionEndView: View {
                         ZStack{
                             ZStack {
                                   Image("shadow")
-                                  Image("icon-bg")
                                   Image("pink-top")
                                       .rotationEffect(.degrees(isRotating ? 320 : -360))
                                       .hueRotation(.degrees(isRotating ? -270 : 60))
@@ -63,13 +62,7 @@ struct ARMissionEndView: View {
                                       .hueRotation(.degrees(isRotating ? 0 : 720))
                                       .rotation3DEffect(.degrees(15), axis: (x: 1, y: 1, z: 1), perspective: isRotating ? 5 : -5)
                                       .blur(radius: 20)
-                                      
-                                  Image("green-right")
-                                      .rotationEffect(.degrees(isRotating ? -300 : 360))
-                                      .hueRotation(.degrees(isRotating ? 300 : -15))
-                                      .rotation3DEffect(.degrees(15), axis: (x: 1, y: isRotating ? -1 : 1, z: 0), perspective: isRotating ? -1 : 1)
-                                      .blur(radius: 10)
-                                  
+                 
                                   Image("green-left")
                                       .rotationEffect(.degrees(isRotating ? 360 : -360))
                                       .hueRotation(.degrees(isRotating ? 180 :50))

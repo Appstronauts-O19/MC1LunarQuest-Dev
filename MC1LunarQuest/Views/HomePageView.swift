@@ -60,12 +60,13 @@ struct HomePageView: View {
                             HStack(spacing: 20){
                                 
                                 //loop for last 4 elements of badges array.
-                                ForEach(userData.user.badges.prefix(4), id: \.self) { badgeName in
+                                //loop through the index in order to avoid protocol complience and errors.
+                                ForEach(0..<4, id: \.self) { index in
                                     Rectangle()
                                         .foregroundColor(.clear)
                                         .frame(width: 54, height: 54)
                                         .background(
-                                            Image(badgeName)
+                                            Image(userData.user.badges[index])
                                                 .resizable()
                                                 .aspectRatio(contentMode: .fill)
                                                 .frame(width: 54, height: 54)

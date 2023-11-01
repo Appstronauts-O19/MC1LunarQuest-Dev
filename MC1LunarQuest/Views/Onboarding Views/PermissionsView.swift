@@ -27,7 +27,7 @@ struct PermissionsView: View {
     
     @EnvironmentObject var userData: UserData
     
-    @ObservedObject var viewModel = CameraPermissionViewModel()
+    @ObservedObject var cameraViewModel = CameraPermissionViewModel()
     @State private var isAlertPresented = false
     
     var body: some View {
@@ -76,14 +76,14 @@ struct PermissionsView: View {
                                     .padding()
                             }.padding()
                             
-                            Toggle("Allow Camera", isOn: $viewModel.isCameraAuthorized)
+                            Toggle("Allow Camera", isOn: $cameraViewModel.isCameraAuthorized)
                                 .foregroundColor(.white)
                                 .font(.system(size: 18).weight(.semibold))
                                 .padding()
-                                .onChange(of: viewModel.isCameraAuthorized, { oldValue, newValue in
+                                .onChange(of: cameraViewModel.isCameraAuthorized, { oldValue, newValue in
                                     if newValue {
                                         isAlertPresented = true
-                                        viewModel.requestCameraPermission()
+                                        cameraViewModel.requestCameraPermission()
                                         }
                                     isAlertPresented = false
                                     userData.user.hasCompletedSetup = true
