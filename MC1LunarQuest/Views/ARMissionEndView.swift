@@ -109,6 +109,8 @@ struct ARMissionEndView: View {
                         //Badge
                         Image("Badge1")
                             .resizable()
+                            .shadow(color: .cyan,radius: 5)
+                            .shadow(color: .blue,radius: 20)
                             .scaleEffect(1.2)
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 200, height: 200, alignment: .center) // Adjust the frame size as required

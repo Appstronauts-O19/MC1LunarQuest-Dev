@@ -106,9 +106,10 @@
                             {
                               "configurationBox" : {
                                 "configuration" : {
-                                  "distance" : 0.8308805,
+                                  "distance" : 1.1863599,
                                   "target" : [
-                                    "33DD621A-B915-4CD8-8538-5B1072C6715A"
+                                    "33DD621A-B915-4CD8-8538-5B1072C6715A",
+                                    "0FFF5415-4F65-4D35-93FC-C213CBAFD359"
                                   ],
                                   "type" : 0
                                 },
@@ -186,9 +187,10 @@
                             {
                               "configurationBox" : {
                                 "configuration" : {
-                                  "distance" : 1.245909,
+                                  "distance" : 1.4567074,
                                   "target" : [
-                                    "A1FA845A-A947-4083-9084-44F1BBACD60B"
+                                    "A1FA845A-A947-4083-9084-44F1BBACD60B",
+                                    "A99DA174-D8AB-4147-ACA0-4D911856E668"
                                   ],
                                   "type" : 0
                                 },
@@ -266,9 +268,9 @@
                             {
                               "configurationBox" : {
                                 "configuration" : {
-                                  "distance" : 0.67401844,
+                                  "distance" : 1.1672211,
                                   "target" : [
-                                    "A1FA845A-A947-4083-9084-44F1BBACD60B"
+                                    "A99DA174-D8AB-4147-ACA0-4D911856E668"
                                   ],
                                   "type" : 0
                                 },
@@ -351,31 +353,172 @@
                     },
                     "transform" : {
                       "matrix" : [
-                        5.930713,
+                        -0.2189291,
                         0,
-                        0,
-                        0,
-                        0,
-                        5.930713,
-                        0,
-                        0,
+                        -5.9266715,
                         0,
                         0,
                         5.930713,
                         0,
-                        -1.5065169,
+                        0,
+                        5.9266715,
+                        0,
+                        -0.21892898,
+                        0,
+                        2.176788,
                         6.055832e-05,
-                        1.738677,
+                        2.706668,
                         1
                       ]
                     }
                   },
                   "9D204D01-7160-4B4A-AB3F-F97A3C3E5A20" : null,
                   "38CFCC53-02B8-439D-B504-5AD6828864F6" : null,
+                  "49FE78C2-12E6-4F38-8CE1-F225CEB657D4" : {
+                    "overrides" : {
+                      "arguments" : [
+                        [
+                          "diameter",
+                          {
+                            "typeName" : "Double",
+                            "value" : 0.009999999999999995
+                          }
+                        ],
+                        [
+                          "height",
+                          {
+                            "typeName" : "Double",
+                            "value" : 0.009999999999999995
+                          }
+                        ],
+                        [
+                          "material",
+                          {
+                            "typeName" : "String",
+                            "value" : "standard"
+                          }
+                        ],
+                        [
+                          "type",
+                          {
+                            "typeName" : "String",
+                            "value" : "capsule"
+                          }
+                        ]
+                      ],
+                      "factory" : {
+                        "identifier" : "com.apple.rc.af.CoreAssetFactories.PrimitiveShapeAssetFactory",
+                        "version" : "1.0"
+                      },
+                      "runtimeAttributes" : [
+                        [
+                          "RuntimeIdentifier",
+                          {
+                            "typeName" : "UUID",
+                            "value" : "0FFF5415-4F65-4D35-93FC-C213CBAFD359"
+                          }
+                        ]
+                      ]
+                    },
+                    "transform" : {
+                      "matrix" : [
+                        0.0049998425,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0.0049998425,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0.0049998425,
+                        0,
+                        1.6552455,
+                        0.9519625,
+                        -1.8655559,
+                        1
+                      ]
+                    }
+                  },
                   "79CB490D-F552-49D9-8B06-8C10EAD61780" : null,
                   "87E49071-7B92-47DD-8E6D-AAA3587682B8" : null,
                   "367BD1AD-7F40-4842-93FC-A9008EF70303" : null,
                   "476DE374-F468-47E1-96DD-59DA970CD6B3" : null,
+                  "481CE169-CAE5-41CA-9627-06159D616888" : {
+                    "overrides" : {
+                      "arguments" : [
+                        [
+                          "diameter",
+                          {
+                            "typeName" : "Double",
+                            "value" : 0.009999999999999995
+                          }
+                        ],
+                        [
+                          "height",
+                          {
+                            "typeName" : "Double",
+                            "value" : 0.4175155458770694
+                          }
+                        ],
+                        [
+                          "material",
+                          {
+                            "typeName" : "String",
+                            "value" : "plastic"
+                          }
+                        ],
+                        [
+                          "roundness",
+                          {
+                            "typeName" : "Double",
+                            "value" : 1
+                          }
+                        ],
+                        [
+                          "type",
+                          {
+                            "typeName" : "String",
+                            "value" : "capsule"
+                          }
+                        ]
+                      ],
+                      "factory" : {
+                        "identifier" : "com.apple.rc.af.CoreAssetFactories.PrimitiveShapeAssetFactory",
+                        "version" : "1.0"
+                      },
+                      "runtimeAttributes" : [
+                        [
+                          "RuntimeIdentifier",
+                          {
+                            "typeName" : "UUID",
+                            "value" : "A99DA174-D8AB-4147-ACA0-4D911856E668"
+                          }
+                        ]
+                      ]
+                    },
+                    "transform" : {
+                      "matrix" : [
+                        0.0023950816,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0.0023950816,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0.0023950816,
+                        0,
+                        2.1156979,
+                        0.6874149,
+                        2.775712,
+                        1
+                      ]
+                    }
+                  },
                   "599D6F81-D98E-4578-B17A-F16F34BCA167" : null,
                   "1002CFD3-5114-4581-91A0-E0787CFF310E" : null,
                   "A83BF302-50F4-4FC4-8EE2-07B9F4E5326F" : null,
@@ -452,9 +595,9 @@
                         0,
                         -7.0710616,
                         0,
-                        1.9041533,
+                        1.5995822,
                         0.335007,
-                        -0.3512733,
+                        -2.0205443,
                         1
                       ]
                     }
@@ -475,21 +618,21 @@
               "title" : "Scene",
               "viewTransform" : {
                 "cameraTransform" : [
-                  0.9107375,
+                  -0.9501041,
                   2.1918598e-08,
-                  0.41298562,
+                  0.311933,
                   0,
-                  0.08128724,
+                  0.061397206,
                   0.980438,
-                  -0.17925882,
+                  0.18700731,
                   0,
-                  -0.4049068,
-                  0.19682814,
-                  0.89292175,
+                  -0.30583107,
+                  0.19682811,
+                  -0.93151814,
                   0,
-                  -3.7056947,
-                  0.41838554,
-                  4.2311354,
+                  -3.5589528,
+                  2.9442766,
+                  -5.036268,
                   1
                 ],
                 "sceneTransform" : [
