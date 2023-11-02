@@ -86,6 +86,7 @@ struct PermissionsView: View {
                                         cameraViewModel.requestCameraPermission()
                                         }
                                     isAlertPresented = false
+                                    userData.user.hasCompletedSetup = true
                                     })
                             
                             Spacer(minLength: 10)
@@ -103,9 +104,7 @@ struct PermissionsView: View {
                                 .foregroundColor(.white)
                                 .clipShape(Capsule())
                             
-                        }.onTapGesture(perform: {
-                            userData.user.hasCompletedSetup = true
-                        })
+                        }
                     }.padding()
                     
                     
